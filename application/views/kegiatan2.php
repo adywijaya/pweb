@@ -29,7 +29,7 @@
                                 <td><?php echo $u->tempat ?></td>
                                 <td><?php echo $u->acara ?></td>
                                 <td>
-                                      <?php echo anchor('kegiatan2'.$u->id,'Edit'); ?>
+                                      <?php echo anchor('kegiatan2/edit/'.$u->id,'Edit'); ?>
                                                   <?php echo anchor('kegiatan2/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>

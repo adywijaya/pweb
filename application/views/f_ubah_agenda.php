@@ -2,10 +2,10 @@
 <html>
 <body>
 	<center>
-		<h1>Edit planning</h1>
+		<h1>Edit Agenda</h1>
 	</center>
-	<?php foreach($planning as $u){ ?>
-	<form action="<?php echo base_url(). 'home2/update'; ?>" method="post">
+	<?php foreach($kegiatan as $u){ ?>
+	<form action="<?php echo base_url(). 'kegiatan2/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>
 				<td>Tanggal</td>
@@ -13,6 +13,14 @@
 					<input type="hidden" name="id" value="<?php echo $u->id ?>">
 					<input type="text" name="tanggal" value="<?php echo $u->tanggal ?>">
 				</td>
+			</tr>
+			<tr>
+				<td>Jam</td>
+				<td><input type="text" name="jam" value="<?php echo $u->jam ?>"></td>
+			</tr>
+			<tr>
+				<td>Tempat</td>
+				<td><input type="text" name="tempat" value="<?php echo $u->tempat ?>"></td>
 			</tr>
 			<tr>
 				<td>Acara</td>

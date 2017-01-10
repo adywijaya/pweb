@@ -64,6 +64,6 @@ class Home2 extends CI_Controller {
 
 	$this->m_data->update_data($where,$data,'planning');
 	redirect('home2');
-}
+	}
 
 }

@@ -42,4 +42,31 @@ class Kegiatan2 extends CI_Controller{
 		redirect('kegiatan2');
 	}
 
+	function edit($id){
+	$where = array('id' => $id);
+	$data['kegiatan'] = $this->m_kegiatan->edit_data($where,'kegiatan')->result();
+	$this->load->view('f_ubah_agenda',$data);
+	}
+	
+	function update(){
+	$id = $this->input->post('id');
+	$tanggal2 = $this->input->post('tanggal');
+	$jam2 = $this->input->post('jam');
+	$tempat2 = $this->input->post('tempat');
+	$acara2 = $this->input->post('acara');
+
+	$data = array(
+		'tanggal' => $tanggal2,
+		'jam' => $jam2,
+		'tempat' => $tempat2,
+		'acara' => $acara2,
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_kegiatan->update_data($where,$data,'kegiatan');
+	redirect('kegiatan2');
+	}
 }
