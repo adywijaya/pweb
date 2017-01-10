@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2017 at 01:46 AM
+-- Generation Time: Jan 10, 2017 at 11:39 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -58,7 +58,12 @@ CREATE TABLE `kegiatan` (
 --
 
 INSERT INTO `kegiatan` (`jam`, `tempat`, `acara`, `tanggal`, `id`) VALUES
-('12', '12', '12', '12', 12);
+('02:10 PM', 'Aula STIMIK KHARISMA', 'Rapat untuk membahas acara Bodhivijja on Vacation', '28 september 2015', 1),
+('11:30 AM', 'Aula STIMIK KHARISMA', 'Rapat untuk membahas Hari Ibu (Kunjungan Panti Jompo)', '29 November 2015', 2),
+('11:30 AM', 'Aula STIMIK KHARISMA', 'Rapat untuk membahas Hari Ibu (Kunjungan Panti Jompo)', '10 February 2016', 3),
+('11:30 AM	', 'Ruang 203 STIMIK KHARISMA', 'Rapat dalam rangka acara Waisak (Kunjungan Panti Asuhan)', '28 April 2016', 4),
+('02:10 PM', 'Ruang 103 STIMIK KHARISMA', 'Rapat dalam rangka Asadha (Seminar Dhamma)', '20 Juni 2016', 5),
+('03:30 PM', 'Ruang 301 STIMIK KHARISMA', 'Rapat dalam rangka acara Kathina', '12 Oktober 2016', 6);
 
 -- --------------------------------------------------------
 
@@ -77,7 +82,12 @@ CREATE TABLE `planning` (
 --
 
 INSERT INTO `planning` (`id`, `tanggal`, `acara`) VALUES
-(1, '1111', '11');
+(1, '5 November 2015', 'Bodhivijja on Vacation'),
+(5, '3 Desember 2015', 'Hari Ibu (Kunjungan Panti Jompo)'),
+(6, '15 February 2016', 'Magha Puja (Seminar)'),
+(7, '1 Mei 2016', 'Waisak (Kunjungan Panti Asuhan)'),
+(8, '28 Juni 2016', '	Asadha (Seminar Dhamma)'),
+(9, '15 Oktober 2016', 'Kathina');
 
 --
 -- Indexes for dumped tables
@@ -114,12 +124,12 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `planning`
 --
 ALTER TABLE `planning`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
