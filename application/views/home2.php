@@ -64,9 +64,10 @@
                             <?php } ?>
                             
                         </tbody>
+
                     </table>
-                </div>
-                            <a href="http://localhost/pweb/home2/tambah"><button >tambah</button></a> 
+                    <a href="http://localhost/pweb/home2/tambah"><button >tambah</button></a> 
+                </div>          
             </div>
         </div>
     </section>

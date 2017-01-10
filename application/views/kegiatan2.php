@@ -36,9 +36,8 @@
                             <?php } ?>
                         </thead>
                     </table>
-                </div>
-                
-                        <a href="http://localhost/pweb/kegiatan2/tambah"><button >tambah</button></a> 
+                    <a href="http://localhost/pweb/kegiatan2/tambah"><button >tambah</button></a> 
+                </div>    
             </div>
     </section>
 
