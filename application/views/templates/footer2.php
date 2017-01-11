@@ -2,7 +2,7 @@
         <hr>
         <a href="<?php echo base_url('login/logout'); ?>">Logout</a>
         <br>
-    </div>
+    </div><br>
 
     </div>
  <!-- jQuery -->

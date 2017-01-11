@@ -9,7 +9,9 @@ class Login extends CI_Controller{
 	}
 
 	function index(){
+		$this->load->view('templates/header.php');
 		$this->load->view('loginadmin');
+		$this->load->view('templates/footer3.php');
 	}
 
 	function aksi_login(){
@@ -19,6 +21,7 @@ class Login extends CI_Controller{
 			'username' => $username,
 			'password' => $password
 			);
+
 		$cek = $this->m_login->cek_login("admin",$where)->num_rows();
 		if($cek > 0){
 
@@ -28,8 +31,7 @@ class Login extends CI_Controller{
 				);
 
 			$this->session->set_userdata($data_session);
-
-			redirect(base_url("admin"));
+			redirect(base_url("home2"));
 
 
 		}else{

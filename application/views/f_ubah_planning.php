@@ -5,7 +5,7 @@
 		<h1>Edit planning</h1>
 	</center>
 	<?php foreach($planning as $u){ ?>
-	<form action="<?php echo base_url(). 'home2/update'; ?>" method="post">
+	<form action="<?php echo base_url(). 'crud_home/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>
 				<td>Tanggal</td>

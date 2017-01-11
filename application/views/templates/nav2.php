@@ -20,9 +20,6 @@
                     <li>
                         <a href="kegiatan2">Kegiatan</a>
                     </li>
-                    <li>
-                        <a href="struktur2">Struktur</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

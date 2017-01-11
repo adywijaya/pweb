@@ -6,6 +6,10 @@ class Kegiatan2 extends CI_Controller{
 		parent::__construct();		
 		$this->load->model('m_kegiatan');
         $this->load->helper('url');
+
+        if($this->session->userdata('status') != "login"){
+		redirect(base_url("home2"));
+		}
 	}
 
 	function index(){

@@ -24,7 +24,7 @@
           <div class="row">
             <br>
             <center>
-              <input type="submit" value="Login">
+              <input type="submit" value="login">
             </center>
           </div>
         </form>

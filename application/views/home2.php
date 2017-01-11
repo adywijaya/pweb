@@ -57,8 +57,8 @@
                                 <td><?php echo $u->tanggal ?></td>
                                 <td><?php echo $u->acara ?></td>
                                 <td>
-                                      <?php echo anchor('home2/edit/'.$u->id,'Edit'); ?>
-                                                  <?php echo anchor('home2/hapus/'.$u->id,'Hapus'); ?>
+                                      <?php echo anchor('crud_home/edit/'.$u->id,'Edit'); ?>
+                                                  <?php echo anchor('crud_home/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>
                             <?php } ?>
@@ -66,7 +66,7 @@
                         </tbody>
 
                     </table>
-                    <a href="http://localhost/pweb/home2/tambah"><button >tambah</button></a> 
+                    <a href="http://localhost/pweb/crud_home/tambah"><button >tambah</button></a> 
                 </div>          
             </div>
         </div>
