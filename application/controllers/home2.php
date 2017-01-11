@@ -21,8 +21,5 @@ class Home2 extends CI_Controller {
 		$data['planning'] = $this->m_data->ambil_data()->result();
 		$this->load->view('home2',$data);
 		$this->load->view('templates/footer2.php');
-	}
-
-	
-
+	}	
 }

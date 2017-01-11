@@ -6,7 +6,7 @@
     <center>
         <h1>Tambah Agenda Kegiatan</h1>
     </center>
-    <form action="<?php echo base_url(). 'kegiatan2/tambah_aksi'; ?>" method="post">
+    <form action="<?php echo base_url(). 'crud_kegiatan/tambah_aksi'; ?>" method="post">
         <table style="margin:20px auto;">
             <tr>
                 <td>tanggal</td>

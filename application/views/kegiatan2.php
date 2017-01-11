@@ -29,14 +29,14 @@
                                 <td><?php echo $u->tempat ?></td>
                                 <td><?php echo $u->acara ?></td>
                                 <td>
-                                      <?php echo anchor('kegiatan2/edit/'.$u->id,'Edit'); ?>
-                                                  <?php echo anchor('kegiatan2/hapus/'.$u->id,'Hapus'); ?>
+                                      <?php echo anchor('crud_kegiatan/edit/'.$u->id,'Edit'); ?>
+                                                  <?php echo anchor('crud_kegiatan/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>
                             <?php } ?>
                         </thead>
                     </table>
-                    <a href="http://localhost/pweb/kegiatan2/tambah"><button >tambah</button></a> 
+                    <a href="http://localhost/pweb/crud_kegiatan/tambah"><button >tambah</button></a> 
                 </div>    
             </div>
     </section>

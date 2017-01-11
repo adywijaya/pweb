@@ -5,7 +5,7 @@
 		<h1>Edit Agenda</h1>
 	</center>
 	<?php foreach($kegiatan as $u){ ?>
-	<form action="<?php echo base_url(). 'kegiatan2/update'; ?>" method="post">
+	<form action="<?php echo base_url(). 'crud_kegiatan/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>
 				<td>Tanggal</td>
