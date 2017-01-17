@@ -6,13 +6,11 @@ $route['kegiatan'] = 'kegiatan';
 $route['struktur'] = 'struktur';
 
 /*Admin*/
-$route['loginadmin'] = 'loginadmin';
+$route['admin/login'] = 'admin';
 
-$route['admin/home'] = 'home2';
-$route['admin/kegiatan'] = 'kegiatan2';
-$route['admin/struktur'] = 'struktur2';
-
-
+$route['admin_home'] = 'admin_home';
+$route['admin_kegiatan'] = 'admin_kegiatan';
+$route['admin_struktur'] = 'admin_struktur';
 
 
 $route['404_override'] = '';

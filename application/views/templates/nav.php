@@ -33,7 +33,7 @@
                         <a href="pendaftaran">Pendaftaran</a>
                     </li>
                     <li>
-                        <a href="login">login</a>
+                        <a href="loginanggota">login</a>
                    	</li>
                 </ul>
             </div>

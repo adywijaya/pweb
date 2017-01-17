@@ -1,6 +1,6 @@
     <div class="col-md-10 col-md-push-1">
         <hr>
-        <p> <a href="loginadmin">Admin</a></p>
+        <a href="<?= base_url()?>admin">admin</a>
     </div>
     
  <!-- jQuery -->

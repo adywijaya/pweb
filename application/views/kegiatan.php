@@ -19,7 +19,6 @@
                                 <th>Acara</th>             
                             </tr>
                             <?php 
-                            $no = 1;
                             foreach($kegiatan as $u){ 
                             ?>
                             <tr>

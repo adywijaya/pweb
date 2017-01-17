@@ -10,6 +10,7 @@ class Crud_home extends CI_Controller {
 			
 	}
 
+/*==========================================================================Tambah planning*/
 function tambah(){
 	$this->load->view('f_tambah_planning');
 	}
@@ -23,15 +24,18 @@ function tambah(){
 			'acara' => $acara,
 			);
 		$this->m_data->input_data($data,'planning');
-		redirect('home2');
+		redirect('admin_home');
 	}
+
+/*==========================================================================Hapus planning*/
 
 	function hapus($id){
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'planning');
-		redirect('home2');
+		redirect('admin_home');
 	}
 
+/*==========================================================================Edit planning*/
 	function edit($id){
 	$where = array('id' => $id);
 	$data['planning'] = $this->m_data->edit_data($where,'planning')->result();
@@ -53,6 +57,6 @@ function tambah(){
 	);
 
 	$this->m_data->update_data($where,$data,'planning');
-	redirect('home2');
+	redirect('admin_home');
 	}
 }

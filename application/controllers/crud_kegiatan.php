@@ -8,6 +8,7 @@ class Crud_kegiatan extends CI_Controller{
         $this->load->helper('url');
 	}
 
+/*==========================================================================Tambah kegiatan*/
 	function tambah(){
 	$this->load->view('f_tambah_kegiatan');
 	}
@@ -25,15 +26,17 @@ class Crud_kegiatan extends CI_Controller{
 			'acara' => $acara,
 			);
 		$this->m_kegiatan->input_data($data,'kegiatan');
-		redirect('kegiatan2');
+		redirect('admin_kegiatan');
 	}
 
+/*==========================================================================Hapus kegiatan*/
 	function hapus($id){
 		$where = array('id' => $id);
 		$this->m_kegiatan->hapus_data($where,'kegiatan');
-		redirect('kegiatan2');
+		redirect('admin_kegiatan');
 	}
 
+/*==========================================================================Edit kegiatan*/
 	function edit($id){
 	$where = array('id' => $id);
 	$data['kegiatan'] = $this->m_kegiatan->edit_data($where,'kegiatan')->result();
@@ -59,6 +62,6 @@ class Crud_kegiatan extends CI_Controller{
 	);
 
 	$this->m_kegiatan->update_data($where,$data,'kegiatan');
-	redirect('kegiatan2');
+	redirect('admin_kegiatan');
 	}
 }

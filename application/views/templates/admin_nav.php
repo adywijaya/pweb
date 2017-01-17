@@ -15,10 +15,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="home2">Home</a>
+                        <a href="admin_home">Home</a>
                     </li>
                     <li>
-                        <a href="kegiatan2">Kegiatan</a>
+                        <a href="admin_kegiatan">Kegiatan</a>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,6 @@
 <?php 
 
-class Kegiatan2 extends CI_Controller{
+class Admin_kegiatan extends CI_Controller{
 
 	function __construct(){
 		parent::__construct();		
@@ -8,15 +8,15 @@ class Kegiatan2 extends CI_Controller{
         $this->load->helper('url');
 
         if($this->session->userdata('status') != "login"){
-		redirect(base_url("home2"));
+		redirect(base_url("admin_home"));
 		}
 	}
 
 	function index(){
 		$this->load->view('templates/header.php');
-		$this->load->view('templates/nav2.php');
+		$this->load->view('templates/admin_nav.php');
 		$data['kegiatan'] = $this->m_kegiatan->tampil_kegiatan()->result();
-		$this->load->view('kegiatan2',$data);
-		$this->load->view('templates/footer2.php');
+		$this->load->view('admin_kegiatan',$data);
+		$this->load->view('templates/admin_footer.php');
 	}
 }

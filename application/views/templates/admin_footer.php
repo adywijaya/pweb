@@ -1,6 +1,6 @@
     <div class="col-md-10 col-md-push-1">
         <hr>
-        <a href="<?php echo base_url('login/logout'); ?>">Logout</a>
+        <a href="<?php echo base_url('admin/logout'); ?>">Logout</a>
         <br>
     </div><br>
 
