@@ -28,10 +28,9 @@
                                 <td><?php echo $u->acara ?></td>
                             </tr>
                             <?php } ?>
-                        </thead>
-                    </table>
-                </div>
-                  
+                            </thead>
+                        </table>
+                </div>   
             </div>
     </section>
 

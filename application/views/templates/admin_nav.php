@@ -20,6 +20,9 @@
                     <li>
                         <a href="admin_kegiatan">Kegiatan</a>
                     </li>
+                    <li>
+                        <a href="admin_struktur">Struktur</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

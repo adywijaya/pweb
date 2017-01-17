@@ -35,8 +35,10 @@ class Admin extends CI_Controller{
 			redirect(base_url("admin_home"));
 
 
-		}else{
-			echo "Username dan password salah !";
+		}
+		else{
+			$_SESSION['notif'] = 1;
+			redirect('loginadmin');
 		}
 	}
 
