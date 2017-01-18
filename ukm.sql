@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2017 at 11:39 AM
+-- Generation Time: Jan 18, 2017 at 10:15 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -82,12 +82,160 @@ CREATE TABLE `planning` (
 --
 
 INSERT INTO `planning` (`id`, `tanggal`, `acara`) VALUES
-(1, '5 November 2015', 'Bodhivijja on Vacation'),
 (5, '3 Desember 2015', 'Hari Ibu (Kunjungan Panti Jompo)'),
 (6, '15 February 2016', 'Magha Puja (Seminar)'),
 (7, '1 Mei 2016', 'Waisak (Kunjungan Panti Asuhan)'),
 (8, '28 Juni 2016', '	Asadha (Seminar Dhamma)'),
-(9, '15 Oktober 2016', 'Kathina');
+(14, '21 agustus 2016', 'Kunjungan klenteng Xiang ma');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `saran`
+--
+
+CREATE TABLE `saran` (
+  `id` int(11) NOT NULL,
+  `saran` text NOT NULL,
+  `nama` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `saran`
+--
+
+INSERT INTO `saran` (`id`, `saran`, `nama`) VALUES
+(10, 'aaaaaaaaaaaaa', 'aaaaa'),
+(11, 'semoga yang jarang masuk ukm dapat point banyak', 'Yovin'),
+(14, 'lol', 'lol'),
+(15, 'asd', 'asd'),
+(16, 'asda', 'asda');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_bendahara1`
+--
+
+CREATE TABLE `ukm_bendahara1` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_bendahara1`
+--
+
+INSERT INTO `ukm_bendahara1` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Calista R', 'Jabatan: Bendahara I (2016-2017)', 'Jurusan: Sistem Informasi', 'Angkatan: 2014');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_bendahara2`
+--
+
+CREATE TABLE `ukm_bendahara2` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_bendahara2`
+--
+
+INSERT INTO `ukm_bendahara2` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Jesslyn', 'Jabatan: Bendahara II (2016-2017)', 'Jurusan: Teknik Informatika', 'Angkatan: 2015');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_humas`
+--
+
+CREATE TABLE `ukm_humas` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_humas`
+--
+
+INSERT INTO `ukm_humas` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Hendra Tan', 'Jabatan: Koordinator Humas (2016-2017)', 'Jurusan: Teknik Informatika', 'Angkatan: 2014');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_ketua`
+--
+
+CREATE TABLE `ukm_ketua` (
+  `id` int(10) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_ketua`
+--
+
+INSERT INTO `ukm_ketua` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Swandy Wisang', 'Jabatan: Ketua UKM BODHIVIJJA (2016-2017)', 'Jurusan: Teknik Informatika', 'Angkatan: 2014');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_sekretaris`
+--
+
+CREATE TABLE `ukm_sekretaris` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_sekretaris`
+--
+
+INSERT INTO `ukm_sekretaris` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Willianto', 'Jabatan: Sekretaris (2016-2017)', 'Jurusan: Teknik Informatika', 'Angkatan: 2015');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ukm_wakil`
+--
+
+CREATE TABLE `ukm_wakil` (
+  `id` int(11) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL,
+  `jurusan` text NOT NULL,
+  `angkatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ukm_wakil`
+--
+
+INSERT INTO `ukm_wakil` (`id`, `nama`, `jabatan`, `jurusan`, `angkatan`) VALUES
+(1, 'Jason Pratama Sunarji', 'Jabatan: Wakil Ketua (2016-2017)', 'Jurusan: Teknik Informatika', 'Angkatan: 2015');
 
 --
 -- Indexes for dumped tables
@@ -112,6 +260,48 @@ ALTER TABLE `planning`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `saran`
+--
+ALTER TABLE `saran`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_bendahara1`
+--
+ALTER TABLE `ukm_bendahara1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_bendahara2`
+--
+ALTER TABLE `ukm_bendahara2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_humas`
+--
+ALTER TABLE `ukm_humas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_ketua`
+--
+ALTER TABLE `ukm_ketua`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_sekretaris`
+--
+ALTER TABLE `ukm_sekretaris`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `ukm_wakil`
+--
+ALTER TABLE `ukm_wakil`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -124,12 +314,47 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `planning`
 --
 ALTER TABLE `planning`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `saran`
+--
+ALTER TABLE `saran`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT for table `ukm_bendahara1`
+--
+ALTER TABLE `ukm_bendahara1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ukm_bendahara2`
+--
+ALTER TABLE `ukm_bendahara2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ukm_humas`
+--
+ALTER TABLE `ukm_humas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ukm_ketua`
+--
+ALTER TABLE `ukm_ketua`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ukm_sekretaris`
+--
+ALTER TABLE `ukm_sekretaris`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `ukm_wakil`
+--
+ALTER TABLE `ukm_wakil`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
