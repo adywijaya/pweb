@@ -2,9 +2,9 @@
         <hr>
         <a href="<?php echo base_url('admin/logout'); ?>">Logout</a>
         <br>
-    </div><br>
+    </div> 
+    <br>
 
-    </div>
  <!-- jQuery -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
 

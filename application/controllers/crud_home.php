@@ -3,7 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Crud_home extends CI_Controller {
 
-	function __construct(){
+	function __construct()
+	{
 		parent::__construct();
 		$this->load->model('m_data');
         $this->load->helper('url');
@@ -11,11 +12,13 @@ class Crud_home extends CI_Controller {
 	}
 
 /*==========================================================================Tambah planning*/
-function tambah(){
+	function tambah()
+	{
 	$this->load->view('f_tambah_planning');
 	}
 
-	function tambah_aksi(){
+	function tambah_aksi()
+	{
 		$tanggal = $this->input->post('tanggal');
 		$acara = $this->input->post('acara');
 
@@ -29,20 +32,23 @@ function tambah(){
 
 /*==========================================================================Hapus planning*/
 
-	function hapus($id){
+	function hapus($id)
+	{
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'planning');
 		redirect('admin_home');
 	}
 
 /*==========================================================================Edit planning*/
-	function edit($id){
+	function edit($id)
+	{
 	$where = array('id' => $id);
 	$data['planning'] = $this->m_data->edit_data($where,'planning')->result();
 	$this->load->view('f_ubah_planning',$data);
 	}
 	
-	function update(){
+	function update()
+	{
 	$id = $this->input->post('id');
 	$tanggal = $this->input->post('tanggal');
 	$acara = $this->input->post('acara');

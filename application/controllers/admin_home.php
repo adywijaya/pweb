@@ -3,12 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin_home extends CI_Controller {
 
-	function __construct(){
+	function __construct()
+	{
 		parent::__construct();
 		$this->load->model('m_data');
         $this->load->helper('url');
 
-        if($this->session->userdata('status') != "login"){
+        if($this->session->userdata('status') != "login")
+        {
 			redirect(base_url("admin_home"));
 		}	
 	}

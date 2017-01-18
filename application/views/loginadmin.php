@@ -18,7 +18,7 @@
             case 1:
             echo "<div class='alert alert-danger' role='alert'>
             <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
-            username atau password anda salah!
+            username atau password anda salah !
             </div>";
             session_destroy();
             break;

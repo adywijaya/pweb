@@ -9,77 +9,159 @@
                 </div>
             </div>
             <div class="row">
+
+<!-- Upload Ketua ==================================================================================================== -->
+                
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/img/team/1.png" class="img-responsive img-circle" alt="">
-                        <h4>Swandy Wisang</h4>
+
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_ketua" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
+
+                        <img class="img-responsive img-circle" src="assets/foto/ketua.jpg">
+                    
+                        <?php foreach($ukm_ketua as $u){ ?>
+                        <h4><?php echo $u->nama ?></h4>
                         <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Ketua UKM BODHIVIJJA (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Teknik Informatika</p>
-                        <p class="text-muted">Angkatan: 2014</p>
-                        
-                        
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/img/team/2.jpg" class="img-responsive img-circle" alt="">
-                         <h4>Jason Pratama Sunarji</h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Wakil Ketua (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Teknik Informatika</p>
-                        <p class="text-muted">Angkatan: 2015</p>
-                        
+                        <p class="text-muted"><?php echo $u->jabatan ?></p>
+                        <p class="text-muted"><?php echo $u->jurusan ?></p>
+                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
+                        <?php } ?>
 
                     </div>
                 </div>
+
+<!-- Upload Wakil ==================================================================================================== -->
+                
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/img/team/3.jpg" class="img-responsive img-circle" alt="">
-                         <h4>Willianto</h4>
+                    
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_wakil" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
+
+                        <img class="img-responsive img-circle" src="assets/foto/wakil.jpg">
+
+                        <?php foreach($ukm_wakil as $u){ ?>
+                        <h4><?php echo $u->nama ?></h4>
                         <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Sekretaris (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Teknik Informatika</p>
-                        <p class="text-muted">Angkatan: 2015</p>
+                        <p class="text-muted"><?php echo $u->jabatan ?></p>
+                        <p class="text-muted"><?php echo $u->jurusan ?></p>
+                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
+                        <?php } ?> 
+                    </div>
+                </div>
+                
 
+<!-- upload Sekretaris =============================================================================================== -->
+                
+                <div class="col-sm-4">
+                    <div class="team-member">
+                    
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_sekretaris" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
 
+                        <img class="img-responsive img-circle" src="assets/foto/sekretaris.jpg">
+                         
+                        <?php foreach($ukm_sekretaris as $u){ ?>
+                        <h4><?php echo $u->nama ?></h4>
+                        <p class="text-muted"></p>
+                        <p class="text-muted"><?php echo $u->jabatan ?></p>
+                        <p class="text-muted"><?php echo $u->jurusan ?></p>
+                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
+                        <?php } ?> 
                     </div>
                 </div>
             </div>
 
             <div class="row">
+
+<!-- Upload Bendahara ================================================================================================ -->
+                
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/img/team/4.png" class="img-responsive img-circle img1" alt="">
-                         <h4>Calista R</h4>
+                    
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_bendahara1" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
+
+                        <img class="img-responsive img-circle" src="assets/foto/bendahara1.jpg">
+                         
+                        <?php foreach($ukm_bendahara1 as $w){ ?>
+                        <h4><?php echo $w->nama ?></h4>
                         <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Bendahara I (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Sistem Informasi</p>
-                        <p class="text-muted">Angkatan: 2014</p>
-
-
+                        <p class="text-muted"><?php echo $w->jabatan ?></p>
+                        <p class="text-muted"><?php echo $w->jurusan ?></p>
+                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
+                        <?php } ?> 
                     </div>
                 </div>
+
+<!-- Upload Bendahara II ============================================================================================= -->
+                
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/img/team/5.jpg" class="img-responsive img-circle" alt="">
-                         <h4>Jesslyn</h4>
+                    
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_bendahara2" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
+
+                        <img class="img-responsive img-circle" src="assets/foto/bendahara2.jpg">
+                         
+                        <?php foreach($ukm_bendahara2 as $w){ ?>
+                        <h4><?php echo $w->nama ?></h4>
                         <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Bendahara II (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Teknik Informatika</p>
-                        <p class="text-muted">Angkatan: 2015</p>
-
-
+                        <p class="text-muted"><?php echo $w->jabatan ?></p>
+                        <p class="text-muted"><?php echo $w->jurusan ?></p>
+                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
+                        <?php } ?> 
                     </div>
                 </div>
+
+<!-- Upload Humas ==================================================================================================== -->
+               
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/img/team/6.jpg" class="img-responsive img-circle" alt="">
-                         <h4>Hendra Tan</h4>
+                    
+                        <form role="form" action="<?= base_url()?>admin_struktur/update_humas" method="post" enctype="multipart/form-data">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                                <input type="file" class="form-control" placeholder="Load Foto" name="foto">
+                            </div>
+                            <input type="submit" class="btn btn-default" value="Update">
+                        </form>
+
+                        <img class="img-responsive img-circle" src="assets/foto/humas.jpg">
+                         
+                        <?php foreach($ukm_humas as $w){ ?>
+                        <h4><?php echo $w->nama ?></h4>
                         <p class="text-muted"></p>
-                        <p class="text-muted">Jabatan: Koordinator Humas (2016-2017)</p>
-                        <p class="text-muted">Jurusan: Teknik Informatika</p>
-                        <p class="text-muted">Angkatan: 2014</p>
+                        <p class="text-muted"><?php echo $w->jabatan ?></p>
+                        <p class="text-muted"><?php echo $w->jurusan ?></p>
+                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
+                        <?php } ?> 
 
 
                     </div>
@@ -89,24 +171,3 @@
     </section>
 
 
-   
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
-</body>
-
-</html>

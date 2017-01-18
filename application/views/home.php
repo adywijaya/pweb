@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-bell fa-stack-1x fa-inverse"></i>
@@ -28,7 +28,7 @@
                     <p class="text-muted">Nah guys ini kata yang agak sedikit horror untuk beberapa orang, disini karena kita akan aktif melakukan berbagai kegiatan. Dan tentu saja itu tidak menggunakan dana kecil, nah disinilah uang kas berfungsi sebagai tambahan dana dalam kegiatan kita. Sehingga kita tidak merasa terbebani dengan adanya biaya kegiatan. So guys kami tekan disni kami tidak mengambil keuntungan dari dana yang kalian berikan namun akan digunakan dalam berbagai kegiatan terutama dalam baksos. Biaya kas yang diberikan sebesar 
                     <b> Rp 25.000/bulan </b></p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-user fa-stack-1x fa-inverse"></i>
@@ -36,7 +36,7 @@
                     <h4 class="service-heading">Dapatkan Point</h4>
                     <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
@@ -59,6 +59,14 @@
                             <?php } ?>
                         </tbody>
                     </table>
+                </div>
+                <div class="col-md-3">
+                    <span class="fontaw fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-commenting-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Live Chat</h4>
+                    <script id="cid0020000145635959142" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 257px;height: 320px;">{"handle":"ukm-bodhivijja","arch":"js","styles":{"a":"e0e0e0","b":100,"c":"000000","d":"000000","k":"e0e0e0","l":"e0e0e0","m":"e0e0e0","p":"10","q":"e0e0e0","r":100,"fwtickm":1}}</script>
                 </div>
             </div>
         </div>
