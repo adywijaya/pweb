@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2017 at 10:15 AM
+-- Generation Time: Jan 18, 2017 at 12:57 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -87,29 +87,6 @@ INSERT INTO `planning` (`id`, `tanggal`, `acara`) VALUES
 (7, '1 Mei 2016', 'Waisak (Kunjungan Panti Asuhan)'),
 (8, '28 Juni 2016', '	Asadha (Seminar Dhamma)'),
 (14, '21 agustus 2016', 'Kunjungan klenteng Xiang ma');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `saran`
---
-
-CREATE TABLE `saran` (
-  `id` int(11) NOT NULL,
-  `saran` text NOT NULL,
-  `nama` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `saran`
---
-
-INSERT INTO `saran` (`id`, `saran`, `nama`) VALUES
-(10, 'aaaaaaaaaaaaa', 'aaaaa'),
-(11, 'semoga yang jarang masuk ukm dapat point banyak', 'Yovin'),
-(14, 'lol', 'lol'),
-(15, 'asd', 'asd'),
-(16, 'asda', 'asda');
 
 -- --------------------------------------------------------
 
@@ -260,12 +237,6 @@ ALTER TABLE `planning`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `saran`
---
-ALTER TABLE `saran`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `ukm_bendahara1`
 --
 ALTER TABLE `ukm_bendahara1`
@@ -314,17 +285,12 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `planning`
 --
 ALTER TABLE `planning`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
---
--- AUTO_INCREMENT for table `saran`
---
-ALTER TABLE `saran`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `ukm_bendahara1`
 --
