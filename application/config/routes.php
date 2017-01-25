@@ -6,10 +6,18 @@ $route['kegiatan'] = 'kegiatan';
 $route['struktur'] = 'struktur';
 
 
+//*Register*//
 $route['register'] = 'signup/signuppage';
 $route['prosesregister'] = 'signup/register';
 
-$route['login'] = 'login';
+/**login**/
+$route['login'] = 'loginform';  // formulir login user
+$route['login/(:any)'] = 'loginform/index/$1';  // formulir login user
+$route['logout'] = 'loginform/logout';  //  logout user
+$route['dologin'] = 'loginform/login';  // proses login user
+
+/**Poin**/
+$route['reward'] = 'reward';
 
 
 /** AJAX  **/

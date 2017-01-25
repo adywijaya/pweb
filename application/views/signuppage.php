@@ -16,7 +16,7 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="Nama">Nama :</label>
                         <div class="col-xs-9">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan Nama Lengkap">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan Nama Lengkap" class="name">
                         </div>
                     </div>
 

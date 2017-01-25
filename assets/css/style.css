@@ -14,6 +14,14 @@ body {
      font-size: 18px;
 }
 
+input[type="checkbox"]{
+  -webkit-appearance:checkbox;
+}
+
+input[type="radio"]{
+  -webkit-appearance:radio;
+}
+
 a{
   color: #ff0;
 }
@@ -129,3 +137,9 @@ after { clear: both; }
   background: #16aa56;
 }
 /*end of login css*/
+
+/*warna tabel*/
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th
+{
+    border-color: #f00;
+}

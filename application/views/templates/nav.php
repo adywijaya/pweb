@@ -29,12 +29,28 @@
                     <li>
                         <a href="tentang">Tentang Kampus</a>
                     </li>
-                    <li>
-                        <a href="register">Pendaftaran</a>
-                    </li>
-                    <li>
-                        <a href="login">login</a>
-                   	</li>
+
+                    <?php
+                        if( isset( $_SESSION['user_name'] ) ) {
+                    ?>
+                            <li>
+                              <a href="<?= base_url()?>reward">Reward</a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url()?>logout">Logout</a>
+                            </li>
+                    <?php
+                        } else {
+                     ?>
+                     <li>
+                         <a href="register">Pendaftaran</a>
+                     </li>
+                     <li>
+                         <a href="<?= base_url()?>login">login</a>
+                     </li>
+                    <?php
+                        }
+                    ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

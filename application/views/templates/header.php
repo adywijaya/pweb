@@ -12,18 +12,21 @@
     <title>UKM Bodhivijja</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url() ?>assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <!-- FA -->
+    <link href="<?= base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Theme CSS -->
-    <link href="assets/css/agency.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/agency.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
