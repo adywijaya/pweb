@@ -82,10 +82,9 @@
         </div>
     </section>
 
-<?php  if( isset( $_SESSION['user_name'] ) ) {
+
   <section id="services">
         <div class="container">
 <script id="cid0020000144762715768" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 777px;height: 346px;">{"handle":"boddhivijja","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"surl":0,"cnrs":"0.35"}}</script>
         </div>
       </section>
-?>
