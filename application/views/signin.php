@@ -1,5 +1,3 @@
-
-<section id="services">
 <div class="container">
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-info" >
@@ -11,7 +9,7 @@
 
                     <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
 
-                    <form id="loginform" class="form-horizontal" role="form" action="dologin" method="post">
+                    <form id="loginform" class="form-horizontal" role="form" action="<?=base_url()?>dologin" method="post">
                       <?php
                       switch( $status ){
                         case 1:
