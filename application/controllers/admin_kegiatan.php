@@ -1,5 +1,4 @@
 <?php 
-
 class Admin_kegiatan extends CI_Controller{
 
 	function __construct()
@@ -18,8 +17,10 @@ class Admin_kegiatan extends CI_Controller{
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
+		$data['planning'] = $this->m_kegiatan->ambil_data()->result();
 		$data['kegiatan'] = $this->m_kegiatan->tampil_kegiatan()->result();
 		$this->load->view('admin_kegiatan',$data);
 		$this->load->view('templates/admin_footer.php');
 	}
+
 }

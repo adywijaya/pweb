@@ -1,4 +1,4 @@
-    <!-- Services Section -->
+<!-- Services Section -->
     <section id="services">
         <div class="container">
             <div class="row">
@@ -7,32 +7,34 @@
                 </div>
             </div>
 
-            <div class="row text-center">
+            <div class="row text-left">
                 <div class="col-md-12">
                     <h4 class="service-heading text-left">Agenda</h4>
-                        <table class="table table-bordered table-striped text-justify">
-                            <thead> 
-                                <tr>
+                    <table class="table">
+                        <thead>
+                            <tr>
                                 <th>Tanggal</th>
                                 <th>Jam</th>
                                 <th>Tempat</th>
-                                <th>Acara</th>             
+                                <th>Acara</th>            
                             </tr>
-                            <?php 
-                            foreach($kegiatan as $u){ 
-                            ?>
+                        </thead>
+                        <tbody>
+                            <?php foreach($kegiatan as $u){ ?>
                             <tr>
                                 <td><?php echo $u->tanggal ?></td>
                                 <td><?php echo $u->jam ?></td>
                                 <td><?php echo $u->tempat ?></td>
                                 <td><?php echo $u->acara ?></td>
                             </tr>
-                            <?php } ?>
-                            </thead>
-                        </table>
-                </div>   
+                            <?php } ?>  
+                        </tbody>
+                    </table>
+                </div> 
             </div>
+        </div>
     </section>
+
 
        <div class="container">
         <div class="col-lg-12">

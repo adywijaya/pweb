@@ -8,7 +8,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">UKM Bodhivijja</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Bodhivijja</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,11 +30,30 @@
                         <a href="tentang">Tentang Kampus</a>
                     </li>
                     <li>
-                        <a href="pendaftaran">Pendaftaran</a>
-                    </li>
-                    <li>
-                        <a href="loginanggota">login</a>
-                   	</li>
+                        <a href="saran">Kritik & Saran</a>
+                    </li> 
+                    
+                    <?php
+                        if( isset( $_SESSION['user_name'] ) ) {
+                    ?>
+                            <li>
+                              <a href="<?= base_url()?>reward">Reward</a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url()?>logout">Logout</a>
+                            </li>
+                    <?php
+                        } else {
+                     ?>
+                     <li>
+                         <a href="register">Pendaftaran</a>
+                     </li>
+                     <li>
+                         <a href="<?= base_url()?>login">login</a>
+                     </li>
+                    <?php
+                        }
+                    ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

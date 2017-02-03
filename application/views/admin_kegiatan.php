@@ -1,4 +1,5 @@
-    <!-- Services Section -->
+<!-- Services Section -->
+
     <section id="services">
         <div class="container">
             <div class="row">
@@ -7,21 +8,21 @@
                 </div>
             </div>
 
-            <div class="row text-center">
+            <div class="row text-left">
                 <div class="col-md-12">
-                    <h4 class="service-heading text-left">Agenda</h4>
-                        <table class="table table-bordered table-striped text-justify">
-                            <thead> 
-                                <tr>
+                    <h4 class="service-heading text-left">Agenda Kegiatan</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
                                 <th>Tanggal</th>
                                 <th>Jam</th>
                                 <th>Tempat</th>
                                 <th>Acara</th> 
                                 <th>Action</th>            
                             </tr>
-                            <?php 
-                            foreach($kegiatan as $u){ 
-                            ?>
+                        </thead>
+                        <tbody>
+                            <?php foreach($kegiatan as $u){ ?>
                             <tr>
                                 <td><?php echo $u->tanggal ?></td>
                                 <td><?php echo $u->jam ?></td>
@@ -33,12 +34,13 @@
                                 </td>
                             </tr>
                             <?php } ?>
-                        </thead>
+                            
+                        </tbody>
                     </table>
-                    <a href="http://localhost/pweb/crud_kegiatan/tambah"><button >tambah</button></a> 
-                </div>    
+                    <div class="text-center">
+                        <a href="crud_kegiatan/tambah"><button >tambah</button></a>  
+                    </div>  
+                </div>
             </div>
+        </div>
     </section>
-
-    
-    <br><br><br>

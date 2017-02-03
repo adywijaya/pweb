@@ -1,7 +1,7 @@
-    <div class="col-md-10 col-md-push-1">
+    <footer>
         <hr>
-        <a href="<?= base_url()?>admin">admin</a>
-    </div>
+        <a href="admin">admin</a>
+    </footer>
     
  <!-- jQuery -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -18,6 +18,10 @@
 
     <!-- Theme JavaScript -->
     <script src="assets/js/agency.min.js"></script>
+    <script src="assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="assets/js/ajax.js"></script>
+    
+
 
 
 </body>

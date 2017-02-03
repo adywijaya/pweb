@@ -1,10 +1,10 @@
 <?php
-class Admin_home extends CI_Controller {
+class Admin_anggota extends CI_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_data');
+		$this->load->model('m_anggota');
         $this->load->helper('url');
 
         if($this->session->userdata('status') != "login")
@@ -17,8 +17,15 @@ class Admin_home extends CI_Controller {
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
-		$data['planning'] = $this->m_data->ambil_data()->result();
-		$this->load->view('admin_home',$data);
+		$data['users'] = $this->m_anggota->tampil_data()->result();
+		$this->load->view('admin_anggota',$data);
 		$this->load->view('templates/admin_footer.php');
 	}	
+
+	function hapus($id)
+	{
+		$where = array('id' => $id);
+		$this->m_anggota->hapus_data($where,'users');
+		redirect('admin_anggota');
+	}
 }

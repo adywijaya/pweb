@@ -6,12 +6,12 @@ class Admin extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('m_login');
-        $this->load->helper('url');
 	}
 
 	public function index()
 	{
 		$this->load->view('templates/header.php');
+		$this->load->view('templates/polos_nav.php');
 		$this->load->view('loginadmin');
 		$this->load->view('templates/login_footer.php');
 	}
@@ -35,7 +35,7 @@ class Admin extends CI_Controller {
 				);
 
 			$this->session->set_userdata($data_session);
-			redirect(base_url("admin_home"));
+			redirect("admin_home");
 
 
 		}
@@ -50,6 +50,6 @@ class Admin extends CI_Controller {
 	public function logout()
 	{
 		$this->session->sess_destroy();
-		redirect(base_url('home'));
+		redirect('home');
 	}
 }

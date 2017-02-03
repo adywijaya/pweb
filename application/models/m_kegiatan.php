@@ -22,6 +22,10 @@ class M_kegiatan extends CI_Model
 	function update_data($where,$data,$table){
 		$this->db->where($where);
 		$this->db->update($table,$data);
+	}
+
+	function ambil_data(){
+		return $this->db->get('planning');
 	}	
 
 }

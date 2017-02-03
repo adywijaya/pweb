@@ -1,15 +1,4 @@
-	    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Website!</div>
-                <div class="intro-heading">UKM Bodhivijja</div>
-                <a href="#services" class="page-scroll btn btn-xl">Info</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Services Section -->
+ <!-- Services Section -->
     <section id="services">
         <div class="container">
             <div class="row">
@@ -36,13 +25,14 @@
                     <h4 class="service-heading">Dapatkan Point</h4>
                     <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
                 </div>
-                <div class="col-md-4">
+                
+                <div class="col-md-4 row text-left">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Planning Kegiatan</h4>
-                    <table class="table table-bordered table-striped text-justify">
+                    <table class="table">
 
                         <thead>
                             <tr>
@@ -66,8 +56,10 @@
                         </tbody>
 
                     </table>
-                    <a href="http://localhost/pweb/crud_home/tambah"><button >tambah</button></a> 
-                </div>          
+                    <div class="text-center">
+                        <a href="crud_home/tambah"><button >tambah</button></a> 
+                    </div>
+                </div>     
             </div>
         </div>
     </section>

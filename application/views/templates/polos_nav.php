@@ -15,20 +15,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="admin_home">Home</a>
+                        <a href="home">Home</a>
                     </li>
-                    <li>
-                        <a href="admin_kegiatan">Kegiatan</a>
-                    </li>
-                    <li>
-                        <a href="admin_struktur">Struktur</a>
-                    </li>
-                    <li>
-                        <a href="admin_saran">Kritik & Saran</a>
-                    </li>
-                    <li>
-                        <a href="admin_anggota">Anggota</a>
-                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

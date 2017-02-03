@@ -1,8 +1,7 @@
-    <div class="col-md-10 col-md-push-1">
+    <footer>
         <hr>
         <a href="<?php echo base_url('admin/logout'); ?>">Logout</a>
-        <br>
-    </div> 
+    </footer> 
     <br>
 
  <!-- jQuery -->

@@ -28,6 +28,7 @@
                     <p class="text-muted">Nah guys ini kata yang agak sedikit horror untuk beberapa orang, disini karena kita akan aktif melakukan berbagai kegiatan. Dan tentu saja itu tidak menggunakan dana kecil, nah disinilah uang kas berfungsi sebagai tambahan dana dalam kegiatan kita. Sehingga kita tidak merasa terbebani dengan adanya biaya kegiatan. So guys kami tekan disni kami tidak mengambil keuntungan dari dana yang kalian berikan namun akan digunakan dalam berbagai kegiatan terutama dalam baksos. Biaya kas yang diberikan sebesar 
                     <b> Rp 25.000/bulan </b></p>
                 </div>
+
                 <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -36,18 +37,18 @@
                     <h4 class="service-heading">Dapatkan Point</h4>
                     <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
                 </div>
-                <div class="col-md-3">
+
+                <div class="col-md-3 row text-left">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Planning Kegiatan</h4>
-                    <table class="table table-bordered table-striped text-justify">
-
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Tanggal</th>
-                                <th>Acara</th>             
+                                <th>Acara</th>              
                             </tr>
                         </thead>
                         <tbody>
@@ -57,9 +58,12 @@
                                 <td><?php echo $u->acara ?></td>
                             </tr>
                             <?php } ?>
+                            
                         </tbody>
+
                     </table>
                 </div>
+
                 <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>

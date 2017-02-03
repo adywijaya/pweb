@@ -14,6 +14,7 @@ class Kegiatan extends CI_Controller {
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/nav.php');
+		$data['planning'] = $this->m_kegiatan->ambil_data()->result();
 		$data['kegiatan'] = $this->m_kegiatan->tampil_kegiatan()->result();
 		$this->load->view('kegiatan',$data);
 		$this->load->view('templates/footer.php');
