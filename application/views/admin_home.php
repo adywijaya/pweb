@@ -26,12 +26,12 @@
                     <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
                 </div>
                 
-                <div class="col-md-4 row text-left">
+                <div class="col-md-4 row text-center">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Planning Kegiatan</h4>
+                    <center><h4 class="service-heading">Planning Kegiatan</h4></center>
                     <table class="table">
 
                         <thead>
@@ -57,7 +57,7 @@
 
                     </table>
                     <div class="text-center">
-                        <a href="crud_home/tambah"><button >tambah</button></a> 
+                        <a href="crud_home/tambah"><button class="btn btn-primary">tambah</button></a> 
                     </div>
                 </div>     
             </div>

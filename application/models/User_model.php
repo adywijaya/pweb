@@ -41,6 +41,14 @@ class User_model extends CI_Model {
         return false;
     }
 
+    public function nimsudahterdaftar( $emailaddr ){
+        $query = $this->db->get_where( 'users', array( 'nim' => $nimaddr) );
+        if( !empty( $query->row_array() ) ) {
+            return true;
+        }
+        return false;
+    }
+
     public function userterdaftar( $username ){
         $query = $this->db->get_where( 'users', array( 'user_name' => $username) );
         if( !empty( $query->row_array() ) ) {

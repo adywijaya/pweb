@@ -65,27 +65,37 @@
 <section id="services">
 	<center>
 		<h1>Edit planning</h1>
+        <br><br>
 	</center>
 	<?php foreach($planning as $u){ ?>
 	<form action="<?php echo base_url(). 'crud_home/update'; ?>" method="post">
-		<table style="margin:20px auto;">
-			<tr>
-				<td>Tanggal</td>
-				<td>
-					<input type="hidden" name="id" value="<?php echo $u->id ?>">
-					<input type="text" name="tanggal" value="<?php echo $u->tanggal ?>">
-				</td>
-			</tr>
-			<tr>
-				<td>Acara</td>
-				<td><input type="text" name="acara" value="<?php echo $u->acara ?>"></td>
-			</tr>
+		<div class="col-md-6 col-md-push-4">
+            <div class="bs-example">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Tanggal</label>
+                    <div class="col-lg-5">
+                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
+                        <input type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+                    </div>
+                </div><br><br>
 
-				<td></td>
-				<td><input type="submit" value="Simpan"></td>
-			</tr>
-		</table>
-	</form>	
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Acara</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
+                    </div>
+                </div><br><br>
+
+                <div class="col-lg-3 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
+                </div>
+
+            </fieldset>
+            </div>
+        </div>
+    </form>
+
 	<?php } ?>
 </section>
 <!-- jQuery -->

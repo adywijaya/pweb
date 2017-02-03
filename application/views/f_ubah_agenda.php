@@ -65,34 +65,48 @@
 <section id="services">
 	<center>
 		<h1>Edit Agenda</h1>
-	</center>
+	</center><br><br>
 	<?php foreach($kegiatan as $u){ ?>
 	<form action="<?php echo base_url(). 'crud_kegiatan/update'; ?>" method="post">
-		<table style="margin:20px auto;">
-			<tr>
-				<td>Tanggal</td>
-				<td>
-					<input type="hidden" name="id" value="<?php echo $u->id ?>">
-					<input type="text" name="tanggal" value="<?php echo $u->tanggal ?>">
-				</td>
-			</tr>
-			<tr>
-				<td>Jam</td>
-				<td><input type="text" name="jam" value="<?php echo $u->jam ?>"></td>
-			</tr>
-			<tr>
-				<td>Tempat</td>
-				<td><input type="text" name="tempat" value="<?php echo $u->tempat ?>"></td>
-			</tr>
-			<tr>
-				<td>Acara</td>
-				<td><input type="text" name="acara" value="<?php echo $u->acara ?>"></td>
-			</tr>
+		<form action="<?php echo base_url(). 'crud_home/update'; ?>" method="post">
+        <div class="col-md-6 col-md-push-4">
+            <div class="bs-example">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Tanggal</label>
+                    <div class="col-lg-5">
+                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
+                        <input type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+                    </div>
+                </div><br><br>
 
-				<td></td>
-				<td><input type="submit" value="Simpan"></td>
-			</tr>
-		</table>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Jam</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="jam" class="form-control" value="<?php echo $u->jam ?>">
+                    </div>
+                </div><br><br>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Tempat</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="tempat" class="form-control" value="<?php echo $u->tempat ?>">
+                    </div>
+                </div><br><br>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Acara</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
+                    </div>
+                </div><br><br>
+
+                <div class="col-lg-3 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
+                </div>
+            </fieldset>
+            </div>
+        </div>
 	</form>	
 	<?php } ?>
 

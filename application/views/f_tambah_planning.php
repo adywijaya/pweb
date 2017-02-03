@@ -65,22 +65,35 @@
 <section id="services">
     <center>
         <h1>Tambah Planning Kegiatan</h1>
+        <br><br>
     </center>
     <form action="<?php echo base_url(). 'crud_home/tambah_aksi'; ?>" method="post">
-        <table style="margin:20px auto;">
-            <tr>
-                <td>tanggal</td>
-                <td><input type="int" name="tanggal"></td>
-            </tr>
-            <tr>
-                <td>acara</td>
-                <td><input type="text" name="acara"></td>
-            </tr>
-                <td></td>
-                <td><input type="submit" value="Tambah"></td>
-            </tr>
-        </table>
+        <div class="col-md-6 col-md-push-4">
+            <div class="bs-example">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Tanggal</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="tanggal" class="form-control" placeholder="Tanggal">
+                    </div>
+                </div><br><br>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Acara</label>
+                    <div class="col-lg-5">
+                        <input type="text" name="acara" class="form-control" placeholder="Acara">
+                    </div>
+                </div><br><br>
+
+                <div class="col-lg-3 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary" value="Tambah">Tambah</button>
+                </div>
+            </fieldset>
+            </div>
+        </div>
     </form>
+ 
+
 </section>
 <!-- jQuery -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>

@@ -10,7 +10,7 @@
 
             <div class="row text-left">
                 <div class="col-md-12">
-                    <h4 class="service-heading text-left">Agenda Kegiatan</h4>
+                    <h4 class="service-heading text-left">Agenda</h4>
                     <table class="table">
                         <thead>
                             <tr>
@@ -38,7 +38,7 @@
                         </tbody>
                     </table>
                     <div class="text-center">
-                        <a href="crud_kegiatan/tambah"><button >tambah</button></a>  
+                        <a href="crud_kegiatan/tambah"><button class="btn btn-primary">tambah</button></a>  
                     </div>  
                 </div>
             </div>

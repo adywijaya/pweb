@@ -19,26 +19,29 @@
           }
           ?>
 
-          <form role="form">
+          <div class="col-md-12 col-md-push-2
+            <div class="bs-example">
+            <fieldset>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Username</label>
+                <div class="col-lg-6">
+                  <input type="text" class="form-control" name="username"></center>
+                </div>
+              </div><br><br>
 
-            <div class="form-group">
-              <center><label> <h5>Username :</h5></label>
-              <input type="text" lass="form-control" name="username"></td></center>
+              <div class="form-group">
+                  <label class="col-lg-2 control-label">Password</label>
+                  <div class="col-lg-6">
+                    <input type="password" class="form-control" name="password"></center>
+                  </div>
+              </div><br><br>
+              
+              <div class="col-lg-3 col-lg-offset-3">
+                  <button type="submit" class="btn btn-primary" value="login">Login</button>
+              </div>
+            </fieldset>
             </div>
-
-            <div class="form-group">
-              <center><label> <h5>Password :</h5></label>
-              <input type="password" lass="form-control" name="password"></center>
-            </div>
-
-
-            <div class="row">
-              <br>
-              <center>
-              <input type="submit" value="login">
-              </center>
-            </div>
-          </form>
+          </div>  
         </form>
       </div>
     </div>

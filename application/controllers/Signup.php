@@ -6,7 +6,10 @@ class Signup extends CI_Controller {
 		public function __construct() {
 	        parent::__construct();
 
+	        $this->load->view('templates/header.php');
+  			$this->load->view('templates/nav.php');
 			$this->load->model('user_model');
+			$this->load->view('templates/footer.php');
 	    }
 
 

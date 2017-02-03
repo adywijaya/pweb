@@ -1,3 +1,4 @@
+<section id="services">
 <div class="container">
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-info" >
@@ -11,7 +12,7 @@
 
                     <form id="loginform" class="form-horizontal" role="form" action="<?=base_url()?>dologin" method="post">
                       <?php
-                      switch( $status ){
+                      switch(  @$_SESSION['notif']  ){
                         case 1:
                         echo "<div class='alert alert-danger' role='alert'>
                         <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
@@ -43,8 +44,6 @@
                                     <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
                                 </div>
 
-
-
                         <div class="input-group">
                                   <div class="checkbox">
                                     <label>
@@ -52,7 +51,6 @@
                                     </label>
                                   </div>
                                 </div>
-
 
                             <div style="margin-top:10px" class="form-group">
                                 <!-- Button -->

@@ -1,10 +1,11 @@
     <!-- Pendaftaran Section -->
-    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Pendaftaran ukm</h2>
+                    <br>
+                    <h1 class="section-heading">Pendaftaran ukm</h1>
                     <h3 class="section-subheading text-muted"></h3>
+                    <br><br>
                 </div>
             </div>
 
@@ -45,6 +46,7 @@
                         <label class="control-label col-xs-3" for="Nama">Nomor Induk Mahasiswa:</label>
                         <div class="col-xs-9">
                             <input type="text" class="form-control" name="nim" id="nim" placeholder="NIM">
+                            <p id="warningnim"> </p>
                         </div>
                     </div>
 
@@ -75,6 +77,7 @@
                             <input type="email" class="form-control" name="email" id="email" placeholder="Email" onchange="email_validate(this.value);" />
                             <div class="status" id="warningemail"></div>
                         </div>
+                        <p id="warningemail"> </p>
                     </div>
 
                     <div class="form-group">
@@ -90,6 +93,7 @@
                              <input type="text" class="form-control" name="username" id="nama" placeholder="Username">
                              <div class="status" id="warning_user_name"></div>
                          </div>
+                         <p id="warning_user_name"> </p>
                      </div>
 
                      <div class="form-group">
@@ -124,7 +128,8 @@
               </form><!-- ends register form -->
             </div>
         </div>
-    </section>
+      </div>
+
 
 
     <script type="text/javascript">

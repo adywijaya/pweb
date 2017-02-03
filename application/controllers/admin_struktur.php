@@ -27,7 +27,7 @@ class Admin_struktur extends CI_Controller{
 		$this->load->view('templates/admin_footer.php');
 	}
 
-// ==================================================================================================== Function upload -->
+// ==================================================================================================== Function Ketua -->
 	
 	public function update_ketua()
 	{
@@ -35,11 +35,65 @@ class Admin_struktur extends CI_Controller{
 		redirect( base_url().'admin_struktur');
 	}
 
+
+	function update_profil_ketua()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_data($where,$data,'ukm_ketua');
+	redirect('admin_struktur');
+	}
+
+// ==================================================================================================== Function Wakil -->
+
 	public function update_wakil()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/wakil.jpg');
 		redirect( base_url().'admin_struktur');
 	}
+
+	function update_profil_wakil()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_wakil($where,$data,'ukm_wakil');
+	redirect('admin_struktur');
+	}
+
+// ==================================================================================================== Function Sekretaris -->
+
 
 	public function update_sekretaris()
 	{
@@ -47,11 +101,63 @@ class Admin_struktur extends CI_Controller{
 		redirect( base_url().'admin_struktur');
 	}
 
+	function update_profil_sekretaris()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_sekretaris($where,$data,'ukm_sekretaris');
+	redirect('admin_struktur');
+	}
+
+// ==================================================================================================== Function Bendahara1 -->
+
 	public function update_bendahara1()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/bendahara1.jpg');
 		redirect( base_url().'admin_struktur');
 	}
+
+	function update_profil_bendahara1()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_bendahara1($where,$data,'ukm_bendahara1');
+	redirect('admin_struktur');
+	}
+
+// ==================================================================================================== Function Bendahara2 -->
 
 	public function update_bendahara2()
 	{
@@ -59,10 +165,60 @@ class Admin_struktur extends CI_Controller{
 		redirect( base_url().'admin_struktur');
 	}
 
+	function update_profil_bendahara2()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_bendahara2($where,$data,'ukm_bendahara2');
+	redirect('admin_struktur');
+	}
+
+// ==================================================================================================== Function Humas -->
+
 	public function update_humas()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/humas.jpg');
 		redirect( base_url().'admin_struktur');
+	}
+
+	function update_profil_humas()
+	{
+	$id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$jabatan = $this->input->post('jabatan');
+	$jurusan = $this->input->post('jurusan');
+	$angkatan = $this->input->post('angkatan');
+
+	$data = array(
+		'nama' => $nama,
+		'jabatan' => $jabatan,
+		'jurusan' => $jurusan,
+		'angkatan' => $angkatan,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_struktur->update_humas($where,$data,'ukm_humas');
+	redirect('admin_struktur');
 	}
 
 }

@@ -12,6 +12,7 @@ class Loginform extends CI_Controller {
     public function index( $status = 0 ){
       $data['status'] = $status;
       $this->load->view('templates/header');
+      $this->load->view('templates/nav.php');
       $this->load->view('signin',$data);
       $this->load->view('templates/footer');
     }
@@ -24,11 +25,13 @@ class Loginform extends CI_Controller {
 				redirect( base_url().'home');
 			} else {
 				// password salah
-				redirect( base_url().'login/2');
+				$_SESSION['notif'] = 2;
+				redirect( base_url().'login');
 			}
 		} else {
 			// username salah
-			redirect( base_url().'login/1');
+			$_SESSION['notif'] = 1;
+			redirect( base_url().'login');
 		}
 
 	}
