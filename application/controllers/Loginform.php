@@ -11,7 +11,6 @@ class Loginform extends CI_Controller {
 
     public function index( $status = 0 ){
       $data['status'] = $status;
-
       $this->load->view('templates/header');
       $this->load->view('templates/nav');
       $this->load->view('signin',$data);

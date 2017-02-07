@@ -44,11 +44,8 @@ class User_model extends CI_Model {
     public function userterdaftar( $username ){
         $query = $this->db->get_where( 'users', array( 'user_name' => $username) );
         if( !empty( $query->row_array() ) ) {
-            $_SESSION['user_name'] = $query->row_array()['user_name'];
-            $_SESSION['password'] = $query->row_array()['password'];
-            $_SESSION['email'] = $query->row_array()['email'];
-            $_SESSION['id'] = $query->row_array()['id'];
-            $_SESSION['nama'] = $query->row_array()['nama'];
+          $_SESSION['user_name'] = $query->row_array()['user_name'];
+            // $_SESSION['password'] = $query->row_array()['password'];
             return true;
         }
         return false;
@@ -56,10 +53,13 @@ class User_model extends CI_Model {
 
     public function passwordok( $pass ){
       // var_dump($pass);
-        if( password_verify( $this->input->post('password') , $_SESSION['password'] ) ){
+      $query = $this->db->get_where( 'users', array( 'user_name' => $_SESSION['user_name']) );
+        if( password_verify( $pass , $query->row_array()['password'] ) ){
+          $_SESSION['id'] = $query->row_array()['id'];
+          $_SESSION['email'] = $query->row_array()['email'];
+          $_SESSION['nama'] = $query->row_array()['nama'];
             return true;
         }
-
         return FALSE;
     }
 
