@@ -9,7 +9,7 @@ class Admin_anggota extends CI_Controller {
 
         if($this->session->userdata('status') != "login")
         {
-			redirect("admin_home");
+			redirect("admin");
 		}	
 	}
 

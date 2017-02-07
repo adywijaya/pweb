@@ -8,9 +8,10 @@ class Admin_struktur extends CI_Controller{
 		$this->load->model('m_struktur');
         $this->load->helper('url');
 
-        if($this->session->userdata('status') != "login"){
-		redirect(base_url("admin_home"));
-		}
+        if($this->session->userdata('status') != "login")
+        {
+			redirect("admin");
+		}	
 	}
 
 	function index()

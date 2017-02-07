@@ -8,6 +8,11 @@ class Admin_saran extends CI_Controller {
 		$this->load->model('m_saran');
 		$this->load->helper('url');
 
+        if($this->session->userdata('status') != "login")
+        {
+			redirect("admin");
+		}
+
 	}
 
 	public function index()

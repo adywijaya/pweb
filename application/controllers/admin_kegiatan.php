@@ -9,8 +9,8 @@ class Admin_kegiatan extends CI_Controller{
 
         if($this->session->userdata('status') != "login")
         {
-		redirect(base_url("admin_home"));
-		}
+			redirect("admin");
+		}	
 	}
 
 	function index()
