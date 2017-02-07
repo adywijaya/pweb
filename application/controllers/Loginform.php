@@ -25,12 +25,12 @@ class Loginform extends CI_Controller {
 				redirect( base_url().'home');
 			} else {
 				// password salah
-				$_SESSION['notif'] = 2;
+				$_SESSION['notifi'] = 2;
 				redirect( base_url().'login');
 			}
 		} else {
 			// username salah
-			$_SESSION['notif'] = 1;
+			$_SESSION['notifi'] = 1;
 			redirect( base_url().'login');
 		}
 

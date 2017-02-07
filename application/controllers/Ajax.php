@@ -26,12 +26,4 @@ class Ajax extends CI_Controller {
         }
     }
 
-    public function ceknim(){
-        if( $this->user_model->nimsudahterdaftar( $this->input->post('nimaddr') ) ){
-            echo "1";
-        } else {
-            echo "0";
-        }
-    }
-
 }

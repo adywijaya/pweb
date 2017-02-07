@@ -31,20 +31,3 @@ $("#email").change( function(){
         }
     });
 } );
-
-$("#nim").change( function(){
-    $.ajax({
-        url: "/pweb/ajax/cekemail",
-        data: { "emailaddr" : $(this).val() } ,
-        method: "POST",
-        success: function(result){
-            if( result == '1') {
-                $("#warningnim").html( "Nim sudah pernah terdaftar" );
-                    $(":submit").attr("disabled", true);
-            } else {
-                $("#warningnim").html( "" );
-                    $(":submit").removeAttr("disabled");
-            }
-        }
-    });
-} );

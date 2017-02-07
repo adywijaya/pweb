@@ -36,7 +36,7 @@
                     <?php
                         if( isset( $_SESSION['user_name'] ) ) {
                     ?>
-                            <li>
+                            <li> 
                               <a href="<?= base_url()?>reward">Reward</a>
                             </li>
                             <li>

@@ -14,16 +14,36 @@
                         <i class="fontaw fa fa-bell fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Info Uang Kas</h4>
-                    <p class="text-muted">Nah guys ini kata yang agak sedikit horror untuk beberapa orang, disini karena kita akan aktif melakukan berbagai kegiatan. Dan tentu saja itu tidak menggunakan dana kecil, nah disinilah uang kas berfungsi sebagai tambahan dana dalam kegiatan kita. Sehingga kita tidak merasa terbebani dengan adanya biaya kegiatan. So guys kami tekan disni kami tidak mengambil keuntungan dari dana yang kalian berikan namun akan digunakan dalam berbagai kegiatan terutama dalam baksos. Biaya kas yang diberikan sebesar 
-                    <b> Rp 25.000/bulan </b></p>
+
+                    <?php foreach($kas as $u){ ?>
+                    <form action="<?php echo base_url(). 'crud_home/update_info_kas'; ?>" method="post">
+                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
+                        <div class="col-lg-12">
+                            <textarea rows="14" class="form-control" name="kas"><?php echo $u->kas ?></textarea><br>
+                        </div><br>
+
+                        <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
+                    </form>
+                    <?php } ?>
                 </div>
+
                 <div class="col-md-4">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-user fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Dapatkan Point</h4>
-                    <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
+
+                    <?php foreach($info as $a){ ?>
+                    <form action="<?php echo base_url(). 'crud_home/update_info_point'; ?>" method="post">
+                        <input type="hidden" name="id" value="<?php echo $a->id ?>">
+                        <div class="col-lg-12">
+                            <textarea rows="14" class="form-control" name="info"><?php echo $a->info ?></textarea><br>
+                        </div><br>
+
+                        <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
+                    </form>
+                    <?php } ?>
                 </div>
                 
                 <div class="col-md-4 row text-center">

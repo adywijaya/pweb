@@ -24,4 +24,35 @@ class M_data extends CI_Model{
 		$this->db->update($table,$data);
 	}	
 
+// =============================================================================================================  -->
+	
+	function tampil_info(){
+		return $this->db->get('kas');
+	}
+
+	function edit_info($where,$table){		
+		return $this->db->get_where($table,$where);
+	}
+
+	function update_info($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
+
+
+// =============================================================================================================  -->
+	
+	function tampil_point(){
+		return $this->db->get('info');
+	}
+
+	function edit_point($where,$table){		
+		return $this->db->get_where($table,$where);
+	}
+
+	function update_point($where,$data,$table){
+		$this->db->where($where);
+		$this->db->update($table,$data);
+	}
+
 }

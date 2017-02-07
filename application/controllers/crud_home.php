@@ -65,4 +65,43 @@ class Crud_home extends CI_Controller {
 	$this->m_data->update_data($where,$data,'planning');
 	redirect('admin_home');
 	}
+
+/*==========================================================================Edit info kas*/
+	function update_info_kas()
+	{
+	$id = $this->input->post('id');
+	$kas = $this->input->post('kas');
+
+	$data = array(
+		'kas' => $kas,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_data->update_info($where,$data,'kas');
+	redirect('admin_home');
+	}
+
+/*==========================================================================Edit info kas*/
+	function update_info_point()
+	{
+	$id = $this->input->post('id');
+	$info = $this->input->post('info');
+
+	$data = array(
+		'info' => $info,
+
+	);
+
+	$where = array(
+		'id' => $id
+	);
+
+	$this->m_data->update_info($where,$data,'info');
+	redirect('admin_home');
+	}
+	
 }

@@ -43,10 +43,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-xs-3" for="Nama">Nomor Induk Mahasiswa:</label>
+                        <label class="control-label col-xs-3" for="Nama">Nomor Induk Mahasiswa :</label>
                         <div class="col-xs-9">
-                            <input type="text" class="form-control" name="nim" id="nim" placeholder="NIM">
-                            <p id="warningnim"> </p>
+                            <input type="text" class="form-control" name="nim" id="nim" placeholder="Nim">
                         </div>
                     </div>
 
@@ -81,7 +80,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-xs-3" for="telp">No. Telp:</label>
+                        <label class="control-label col-xs-3" for="telp">No. Telp :</label>
                         <div class="col-xs-9">
                             <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Nomor Telepon / Handphone"/>
                         </div>
@@ -104,7 +103,7 @@
                      </div>
 
                      <div class="form-group">
-                         <label class="control-label col-xs-3" for="inputPassword">Password Confirm:</label>
+                         <label class="control-label col-xs-3" for="inputPassword">Password Confirm :</label>
                          <div class="col-xs-9">
                              <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter password again"  id="pass2" onkeyup="checkPass(); return false;" />
                              <span id="confirmMessage" class="confirmMessage"></span>

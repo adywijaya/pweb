@@ -12,31 +12,29 @@
 
                     <form id="loginform" class="form-horizontal" role="form" action="<?=base_url()?>dologin" method="post">
                       <?php
-                      switch(  @$_SESSION['notif']  ){
+                      switch(  @$_SESSION['notifi']  ){
                         case 1:
                         echo "<div class='alert alert-danger' role='alert'>
                         <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
                         Sign-in Gagal:
-                        Username tidak dikenali atau salah tulis
+                        Username tidak dikenali
                         </div>";
+                        session_destroy();
                         break;
+
                         case 2:
                         echo "<div class='alert alert-danger' role='alert'>
                         <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
-                        Sign-in Gagal: Password tidak sesuai
+                        Sign-in Gagal:
+                        password tidak dikenali
                         </div>";
-                        break;
-                        case 3:
-                        echo "<div class='alert alert-danger' role='alert'>
-                        <span class='fa fa-exclamation-triangle fa-2x' aria-hidden='true'></span>
-                        Anda Sudah Logout
-                        </div>";
+                        session_destroy();
                         break;
                       }
                       ?>
                         <div style="margin-bottom: 25px" class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
                                 </div>
 
                         <div style="margin-bottom: 25px" class="input-group">

@@ -3,7 +3,7 @@
 <div class="container">
 <div class="col-md-10 col-md-push-1">
   <h1>Reward Point</h1>
-  <hr>
+  <br><br>
 
 <table class="table">
     <thead>
