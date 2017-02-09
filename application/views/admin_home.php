@@ -16,7 +16,7 @@
                     <h4 class="service-heading">Info Uang Kas</h4>
 
                     <?php foreach($kas as $u){ ?>
-                    <form action="<?php echo base_url(). 'crud_home/update_info_kas'; ?>" method="post">
+                    <form action="<?php echo base_url(). 'crud_home_page/update_info_kas'; ?>" method="post">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
                         <div class="col-lg-12">
                             <textarea rows="14" class="form-control" name="kas"><?php echo $u->kas ?></textarea><br>
@@ -35,7 +35,7 @@
                     <h4 class="service-heading">Dapatkan Point</h4>
 
                     <?php foreach($info as $a){ ?>
-                    <form action="<?php echo base_url(). 'crud_home/update_info_point'; ?>" method="post">
+                    <form action="<?php echo base_url(). 'crud_home_page/update_info_point'; ?>" method="post">
                         <input type="hidden" name="id" value="<?php echo $a->id ?>">
                         <div class="col-lg-12">
                             <textarea rows="14" class="form-control" name="info"><?php echo $a->info ?></textarea><br>
@@ -67,8 +67,8 @@
                                 <td><?php echo $u->tanggal ?></td>
                                 <td><?php echo $u->acara ?></td>
                                 <td>
-                                      <?php echo anchor('crud_home/edit/'.$u->id,'Edit'); ?>
-                                                  <?php echo anchor('crud_home/hapus/'.$u->id,'Hapus'); ?>
+                                      <?php echo anchor('crud_home_page/edit/'.$u->id,'Edit'); ?>
+                                                  <?php echo anchor('crud_home_page/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>
                             <?php } ?>
@@ -77,7 +77,7 @@
 
                     </table>
                     <div class="text-center">
-                        <a href="crud_home/tambah"><button class="btn btn-primary">tambah</button></a> 
+                        <a href="crud_home_page/tambah"><button class="btn btn-primary">tambah</button></a> 
                     </div>
                 </div>     
             </div>

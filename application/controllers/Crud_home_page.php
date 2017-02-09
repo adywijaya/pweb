@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Crud_home extends CI_Controller {
+class Crud_home_page extends CI_Controller {
 
 	function __construct()
 	{
