@@ -1,6 +1,6 @@
     <footer>
         <hr>
-        <a href="<?php echo base_url('admin/logout'); ?>">Logout</a>
+        <a href="admin">Logout</a>
     </footer> 
     <br>
 

@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 		else
 		{
 			$_SESSION['notif'] = 1;
-			redirect(base_url().'admin/login');
+			redirect(base_url().'admin');
 		}
 	}
 
