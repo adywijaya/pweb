@@ -27,7 +27,7 @@ class Crud_home_page extends CI_Controller {
 			'acara' => $acara,
 			);
 		$this->m_data->input_data($data,'planning');
-		redirect('admin_home');
+		redirect('admin_home_page');
 	}
 
 /*==========================================================================Hapus planning*/
@@ -36,7 +36,7 @@ class Crud_home_page extends CI_Controller {
 	{
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'planning');
-		redirect('admin_home');
+		redirect('admin_home_page');
 	}
 
 /*==========================================================================Edit planning*/
@@ -63,7 +63,7 @@ class Crud_home_page extends CI_Controller {
 	);
 
 	$this->m_data->update_data($where,$data,'planning');
-	redirect('admin_home');
+	redirect('admin_home_page');
 	}
 
 /*==========================================================================Edit info kas*/
@@ -82,7 +82,7 @@ class Crud_home_page extends CI_Controller {
 	);
 
 	$this->m_data->update_info($where,$data,'kas');
-	redirect('admin_home');
+	redirect('admin_home_page');
 	}
 
 /*==========================================================================Edit info kas*/
@@ -101,7 +101,7 @@ class Crud_home_page extends CI_Controller {
 	);
 
 	$this->m_data->update_info($where,$data,'info');
-	redirect('admin_home');
+	redirect('admin_home_page');
 	}
 	
 }

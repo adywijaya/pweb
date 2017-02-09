@@ -67,7 +67,7 @@
         <h1>Tambah Planning Kegiatan</h1>
         <br><br>
     </center>
-    <form action="<?php echo base_url(). 'crud_home/tambah_aksi'; ?>" method="post">
+    <form action="<?php echo base_url(). 'crud_home_page/tambah_aksi'; ?>" method="post">
         <div class="col-md-6 col-md-push-4">
             <div class="bs-example">
             <fieldset>
