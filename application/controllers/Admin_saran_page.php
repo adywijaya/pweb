@@ -42,6 +42,6 @@ class Admin_saran_page extends CI_Controller {
 	{
 		$where = array('id' => $id);
 		$this->m_saran->hapus_data($where,'saran');
-		redirect('admin_saran');
+		redirect('admin_saran_page');
 	}
 }
