@@ -28,4 +28,9 @@ class Admin_anggota extends CI_Controller {
 		$this->m_anggota->hapus_data($where,'users');
 		redirect('admin_anggota');
 	}
+
+	public function updatepoint($nim){
+		$this->m_anggota->updatepoint($nim, $this->input->post('point'));
+		redirect('admin_anggota');
+	}
 }

@@ -32,28 +32,12 @@
                     <li>
                         <a href="saran">Kritik & Saran</a>
                     </li> 
-                    
-                    <?php
-                        if( isset( $_SESSION['user_name'] ) ) {
-                    ?>
-                            <li> 
-                              <a href="<?= base_url()?>reward">Reward</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url()?>logout">Logout</a>
-                            </li>
-                    <?php
-                        } else {
-                     ?>
                      <li>
                          <a href="register">Pendaftaran</a>
                      </li>
                      <li>
-                         <a href="<?= base_url()?>login">login</a>
+                         <a href="<?= base_url()?>reward">Anggota</a>
                      </li>
-                    <?php
-                        }
-                    ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

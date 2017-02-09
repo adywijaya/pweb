@@ -11,9 +11,10 @@
             <div class="row text-left">
                 <div class="col-md-12">
                     <h4 class="service-heading text-left">Agenda</h4>
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Tanggal</th>
                                 <th>Jam</th>
                                 <th>Tempat</th>
@@ -22,8 +23,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($kegiatan as $u){ ?>
+                            <?php $no = 1; foreach($kegiatan as $u){ ?>
                             <tr>
+                                <td><?php echo $no++ ?></td>
                                 <td><?php echo $u->tanggal ?></td>
                                 <td><?php echo $u->jam ?></td>
                                 <td><?php echo $u->tempat ?></td>

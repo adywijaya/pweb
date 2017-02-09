@@ -17,16 +17,11 @@ $route['admin_kegiatan'] = 'admin_kegiatan';
 $route['admin_struktur'] = 'admin_struktur';
 $route['admin_saran'] = 'admin_saran';
 $route['admin_anggota'] = 'admin_anggota';
+$route['updatepoint/(:any)'] = 'admin_anggota/updatepoint/$1';
 
 //*Register*//
 $route['register'] = 'signup/signuppage';
 $route['prosesregister'] = 'signup/register';
-
-/**login**/
-$route['login'] = 'loginform';  // formulir login user
-$route['login/(:any)'] = 'loginform/index/$1';  // formulir login user
-$route['logout'] = 'loginform/logout';  //  logout user
-$route['dologin'] = 'loginform/login';  // proses login user
 
 /**Poin**/
 $route['reward'] = 'reward';

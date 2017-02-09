@@ -2,31 +2,39 @@
 
 <div class="container">
 <div class="col-md-10 col-md-push-1">
-  <h1>Reward Point</h1>
+  <center><h1>Informasi Anggota</h1><center>
   <br><br>
 
-<table class="table">
+<table class="table table-striped">
     <thead>
     <tr>
+      <th>No</th>
       <th>NIM</th>
       <th>Nama</th>
       <th>Jurusan</th>
-      <th>Reward Point</th>
+      <th>Jenis Kelamin</th>
+      <th>Email</th>
+      <th>Angkatan</th>
+      <th>Point</th>
     </tr>
     </thead>
 
     <tbody>
-      <?php foreach ($reward as $d) { ?>
+      <?php $no = 1; foreach ($users as $u) { ?>
           <tr>
-             <th><?= $d['nim']; ?></th>
-             <th><?= $d['nama']; ?></th>
-             <th><?= $d['jurusan']; ?></th>
-             <th><?= $d['poin']; ?></th>
+            <td><?php echo $no++ ?></td>
+            <td><?php echo $u->nim ?></td>
+            <td><?php echo $u->nama ?></td>
+            <td><?php echo $u->jurusan ?></td>
+            <td><?php echo $u->jenis_kelamin ?></td>
+            <td><?php echo $u->email ?></td>
+            <td><?php echo $u->angkatan ?></td>
+            <td><?php echo $u->point ?></td>
           </tr>
        <?php } ?>
 
     </tbody>
-</table>
-    </div>
+    </table>
   </div>
+</div>
 </section>

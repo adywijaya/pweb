@@ -52,7 +52,7 @@
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
                     <center><h4 class="service-heading">Planning Kegiatan</h4></center>
-                    <table class="table">
+                    <table class="table table-striped">
 
                         <thead>
                             <tr>

@@ -18,8 +18,7 @@ class User_model extends CI_Model {
                     'alamat' => $this->input->post('alamat'),
                     'email' =>  $this->input->post('email'),
                     'jurusan' =>  $this->input->post('jurusan'),
-                    'user_name' =>  $this->input->post('username'),
-                    'password' =>  password_hash( $this->input->post('password'), PASSWORD_BCRYPT )
+                    'angkatan' =>  $this->input->post('angkatan'),
                 ];
 
         $this->db->insert( 'users', $data );
@@ -64,18 +63,9 @@ class User_model extends CI_Model {
         return FALSE;
     }
 
-    public function get_poin(){
-      $sql = "SELECT u.nim, u.nama , u.jurusan, p.poin
-                  FROM poin p
-                  LEFT JOIN users u
-                  USING (nim)
-                  ORDER BY u.nim ASC";
-      $query = $this->db->query( $sql );
-      if( !empty( $query->result_array() ) ) {
-          return $query->result_array();
-      } else {
-          return false;
-      }
+    function tampil_data(){
+        $this->db->order_by('nim');
+        return $this->db->get('users');
     }
 
 }

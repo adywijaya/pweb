@@ -47,7 +47,7 @@
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Planning Kegiatan</h4>
-                    <table class="table">
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Tanggal</th>

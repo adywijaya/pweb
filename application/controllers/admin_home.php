@@ -9,7 +9,7 @@ class Admin_home extends CI_Controller {
 
         if($this->session->userdata('status') != "login")
         {
-			redirect("admin");
+			redirect("/admin");
 		}	
 	}
 

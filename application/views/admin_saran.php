@@ -16,6 +16,7 @@
                     <table class="table table-striped table-striped text-justify">
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Nama</th>
                                 <th>email</th>
                                 <th>Saran</th> 
@@ -25,6 +26,7 @@
                         <tbody>
                             <?php $no = 1; foreach($saran as $u){ ?>
                             <tr>
+                                <td><?php echo $no++ ?></td>
                                 <td><?php echo $u->nama ?></td>
                                 <td><?php echo $u->email ?></td>
                                 <td><?php echo $u->saran ?></td>

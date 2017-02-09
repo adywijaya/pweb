@@ -17,27 +17,27 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="Nama">Nama :</label>
                         <div class="col-xs-9">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan Nama Lengkap" class="name">
+                            <input required="required" type="text" class="form-control" name="name" id="name" placeholder="Masukkan Nama Lengkap" class="name">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="Nama">Tanggal Lahir :</label>
                         <div class="col-xs-9">
-                    <input class="form-control" type="date" name="bday">
-                  </div>
-              </div>
+                            <input required="required" class="form-control" type="date" name="bday">
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3">Jenis Kelamin :</label>
                         <div class="col-xs-2">
                             <label class="radio-inline">
-                            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                            <input required="required" type="radio" name="gender" value="Laki-laki"> Laki-laki
                             </label>
                         </div>
                         <div class="col-xs-2">
                             <label class="radio-inline">
-                            <input type="radio" name="gender" value="Perempuan"> Perempuan
+                            <input required="required" type="radio" name="gender" value="Perempuan"> Perempuan
                             </label>
                         </div>
                     </div>
@@ -45,35 +45,44 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="Nama">Nomor Induk Mahasiswa :</label>
                         <div class="col-xs-9">
-                            <input type="text" class="form-control" name="nim" id="nim" placeholder="Nim">
+                            <input required="required" type="text" class="form-control" name="nim" id="nim" placeholder="Nim">
+                            <div class="status" id="warningnim"></div>
                         </div>
+                        <p id="warningnim"> </p>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3">Jurusan :</label>
                         <div class="col-xs-3">
                             <label class="radio-inline">
-                            <input type="radio" name="jurusan" value="Sistem Informasi"> System Informasi (SI)
+                            <input required="required" type="radio" name="jurusan" value="Sistem Informasi"> System Informasi (SI)
                             </label>
                         </div>
                         <div class="col-xs-3">
                             <label class="radio-inline">
-                            <input type="radio" name="jurusan" value="Teknik Informatika"> Teknik Informatika (TI)
+                            <input required="required" type="radio" name="jurusan" value="Teknik Informatika"> Teknik Informatika (TI)
                             </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-3" for="Nama">Angkatan :</label>
+                        <div class="col-xs-9">
+                            <input required="required" type="text" class="form-control" name="angkatan" id="angkatan" placeholder="Angkatan" id="angkatan">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="Alamat">Alamat :</label>
                         <div class="col-xs-9">
-                            <textarea rows="3" class="form-control" name="alamat" id="alamat" placeholder="Masukan Alamat Lengkap"></textarea>
+                            <textarea required="required" rows="3" class="form-control" name="alamat" id="alamat" placeholder="Masukan Alamat Lengkap"></textarea>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="inputEmail">Email :</label>
                         <div class="col-xs-9">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" onchange="email_validate(this.value);" />
+                            <input required="required" type="email" class="form-control" name="email" id="email" placeholder="Email" onchange="email_validate(this.value);" />
                             <div class="status" id="warningemail"></div>
                         </div>
                         <p id="warningemail"> </p>
@@ -82,40 +91,32 @@
                     <div class="form-group">
                         <label class="control-label col-xs-3" for="telp">No. Telp :</label>
                         <div class="col-xs-9">
-                            <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Nomor Telepon / Handphone"/>
+                            <input required="required" type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="Nomor Telepon / Handphone"/>
                         </div>
-                     </div>
+                    </div>
 
-                     <div class="form-group">
-                         <label class="control-label col-xs-3" for="Nama">Username :</label>
-                         <div class="col-xs-9">
-                             <input type="text" class="form-control" name="username" id="nama" placeholder="Username">
-                             <div class="status" id="warning_user_name"></div>
-                         </div>
-                         <p id="warning_user_name"> </p>
-                     </div>
-
-                     <div class="form-group">
-                         <label class="control-label col-xs-3" for="inputPassword">Password :</label>
-                         <div class="col-xs-9">
-                             <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" name="password" id="pass1" placeholder="password">
-                         </div>
-                     </div>
-
-                     <div class="form-group">
-                         <label class="control-label col-xs-3" for="inputPassword">Password Confirm :</label>
-                         <div class="col-xs-9">
-                             <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter password again"  id="pass2" onkeyup="checkPass(); return false;" />
-                             <span id="confirmMessage" class="confirmMessage"></span>
-                         </div>
-                     </div>
-
-                     <div class="form-group">
+                    <div class="form-group">
                         <div class="col-xs-offset-3 col-xs-9">
                         <hr>
-                        <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
-                      </div>
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">terms and conditions</h3>
+                                </div>
+                                <div class="panel-body">
+                                    1. Rajin ikut berpartisipasi dalam setiap unit kegiatan UKM<br>
+                                    2. Selalu menjaga ikatan pada sesama anggota UKM<br>
+                                    3. Ikut berpartisipasi dalam setiap kegiatan amal<br>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                        <div class="col-xs-offset-3 col-xs-9">
+                        
+                        <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the terms and conditions</a> for Registration.</label><span class="req">* </span>
+                        </div>
                     </div>
+
                     <br>
                     <div class="form-group">
                         <div class="col-xs-offset-3 col-xs-9">
