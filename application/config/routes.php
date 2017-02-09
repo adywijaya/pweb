@@ -17,10 +17,10 @@ $route['admin/logout'] = 'admin_login/logout';
 
 
 $route['admin_home_page'] = 'admin_home_page';
-$route['admin_kegiatan'] = 'admin_kegiatan';
-$route['admin_struktur'] = 'admin_struktur';
-$route['admin_saran'] = 'admin_saran';
-$route['admin_anggota'] = 'admin_anggota';
+$route['admin_kegiatan_page'] = 'admin_kegiatan_page';
+$route['admin_struktur_page'] = 'admin_struktur_page';
+$route['admin_saran_page'] = 'admin_saran_page';
+$route['admin_anggota_page'] = 'admin_anggota_page';
 
 $route['updatepoint/(:any)'] = 'admin_anggota/updatepoint/$1';
 

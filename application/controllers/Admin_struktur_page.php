@@ -1,6 +1,6 @@
 <?php 
 
-class Admin_struktur extends CI_Controller{
+class Admin_struktur_page extends CI_Controller{
 
 	function __construct()
 	{

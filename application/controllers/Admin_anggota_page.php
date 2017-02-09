@@ -1,5 +1,5 @@
 <?php
-class Admin_anggota extends CI_Controller {
+class Admin_anggota_page extends CI_Controller {
 
 	function __construct()
 	{
