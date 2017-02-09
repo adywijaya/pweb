@@ -1,11 +1,12 @@
 <?php 
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin_login extends CI_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('M_login');
+		$this->load->model('m_login');
 		$this->load->helper('url'); 
 	}
 
@@ -20,7 +21,7 @@ class Admin_login extends CI_Controller {
 /*==========================================================================Login KHUSUS admin*/
 	function aksi_login()
 	{
-		if ($user= $this->M_login->get_user() ){
+		if ($user= $this->m_login->get_user() ){
 			$_SESSION['login'] = 1;
 			redirect(base_url()."admin_home");
 		}else{
