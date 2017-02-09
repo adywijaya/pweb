@@ -33,7 +33,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-10 col-lg-offset-4">
+                        <div class="col-lg-10 col-lg-offset-1">
                             <button type="submit" class="btn btn-primary" value="Kirim Saran">Submit</button>
                         </div>
                         </fieldset>
