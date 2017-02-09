@@ -1,6 +1,6 @@
 <?php 
 
-class Admin extends CI_Controller {
+class Admin_login extends CI_Controller {
 
 	function __construct()
 	{
@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
 			redirect(base_url()."admin_home");
 		}else{
 			$_SESSION['notif'] = 1;
-			redirect(base_url().'admin/login');
+			redirect(base_url().'admin_login');
 		}
 	}
 

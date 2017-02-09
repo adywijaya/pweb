@@ -10,9 +10,9 @@ $route['saran'] = 'saran';
 $route['pendaftaran'] = 'pendaftaran';
 
 
-$route['admin/login'] = 'admin';
-$route['admin/dologin'] = 'admin/aksi_login';
-$route['admin/logout'] = 'admin/logout';
+$route['admin_login'] = 'admin_login';
+$route['admin/dologin'] = 'admin_login/aksi_login';
+$route['admin/logout'] = 'admin_login/logout';
 
 
 

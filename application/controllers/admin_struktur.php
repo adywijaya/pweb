@@ -12,7 +12,7 @@ class Admin_struktur extends CI_Controller{
 
 	function index()
 	{
-		if(!isset($_SESSION['login'])) redirect(base_url().'admin/login');
+		if(!isset($_SESSION['login'])) redirect(base_url().'admin_login');
 		
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
