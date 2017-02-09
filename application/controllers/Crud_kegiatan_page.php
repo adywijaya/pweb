@@ -1,6 +1,6 @@
 <?php 
 
-class Crud_kegiatan extends CI_Controller {
+class Crud_kegiatan_page extends CI_Controller {
 
 	function __construct()
 	{
@@ -29,7 +29,7 @@ class Crud_kegiatan extends CI_Controller {
 			'acara' => $acara,
 			);
 		$this->m_kegiatan->input_data($data,'kegiatan');
-		redirect('admin_kegiatan');
+		redirect('admin_kegiatan_page');
 	}
 
 /*==========================================================================Hapus kegiatan*/
@@ -37,7 +37,7 @@ class Crud_kegiatan extends CI_Controller {
 	{
 		$where = array('id' => $id);
 		$this->m_kegiatan->hapus_data($where,'kegiatan');
-		redirect('admin_kegiatan');
+		redirect('admin_kegiatan_page');
 	}
 
 /*==========================================================================Edit kegiatan*/
@@ -68,6 +68,6 @@ class Crud_kegiatan extends CI_Controller {
 		);
 
 		$this->m_kegiatan->update_data($where,$data,'kegiatan');
-		redirect('admin_kegiatan');
+		redirect('admin_kegiatan_page');
 	}
 }

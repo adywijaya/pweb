@@ -31,8 +31,8 @@
                                 <td><?php echo $u->tempat ?></td>
                                 <td><?php echo $u->acara ?></td>
                                 <td>
-                                      <?php echo anchor('crud_kegiatan/edit/'.$u->id,'Edit'); ?>
-                                                  <?php echo anchor('crud_kegiatan/hapus/'.$u->id,'Hapus'); ?>
+                                      <?php echo anchor('crud_kegiatan_page/edit/'.$u->id,'Edit'); ?>
+                                                  <?php echo anchor('crud_kegiatan_page/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>
                             <?php } ?>
@@ -40,7 +40,7 @@
                         </tbody>
                     </table>
                     <div class="text-center">
-                        <a href="crud_kegiatan/tambah"><button class="btn btn-primary">tambah</button></a>  
+                        <a href="crud_kegiatan_page/tambah"><button class="btn btn-primary">tambah</button></a>  
                     </div>  
                 </div>
             </div>

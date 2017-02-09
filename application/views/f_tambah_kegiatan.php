@@ -66,7 +66,7 @@
     <center>
         <h1>Tambah Agenda Kegiatan</h1>
     </center><br><br>
-    <form action="<?php echo base_url(). 'crud_kegiatan/tambah_aksi'; ?>" method="post">
+    <form action="<?php echo base_url(). 'crud_kegiatan_page/tambah_aksi'; ?>" method="post">
         <div class="col-md-6 col-md-push-4">
             <div class="bs-example">
             <fieldset>

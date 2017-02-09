@@ -67,8 +67,7 @@
 		<h1>Edit Agenda</h1>
 	</center><br><br>
 	<?php foreach($kegiatan as $u){ ?>
-	<form action="<?php echo base_url(). 'crud_kegiatan/update'; ?>" method="post">
-		<form action="<?php echo base_url(). 'crud_home/update'; ?>" method="post">
+	<form action="<?php echo base_url(). 'crud_kegiatan_page/update'; ?>" method="post">
         <div class="col-md-6 col-md-push-4">
             <div class="bs-example">
             <fieldset>
