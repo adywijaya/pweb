@@ -23,7 +23,7 @@ class Admin_login extends CI_Controller {
 	{
 		if ($user= $this->m_admin->get_user() ){
 			$_SESSION['login'] = 1;
-			redirect(base_url()."admin_home");
+			redirect(base_url()."admin_home_page");
 		}else{
 			$_SESSION['notif'] = 1;
 			redirect(base_url().'admin_login');

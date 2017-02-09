@@ -16,7 +16,7 @@ $route['admin/logout'] = 'admin_login/logout';
 
 
 
-$route['admin_home'] = 'admin_home';
+$route['admin_home_page'] = 'admin_home_page';
 $route['admin_kegiatan'] = 'admin_kegiatan';
 $route['admin_struktur'] = 'admin_struktur';
 $route['admin_saran'] = 'admin_saran';
