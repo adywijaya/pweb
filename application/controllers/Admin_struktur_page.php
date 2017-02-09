@@ -31,7 +31,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_ketua()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/ketua.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 
@@ -56,7 +56,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_data($where,$data,'ukm_ketua');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 // ==================================================================================================== Function Wakil -->
@@ -64,7 +64,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_wakil()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/wakil.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 	function update_profil_wakil()
@@ -88,7 +88,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_wakil($where,$data,'ukm_wakil');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 // ==================================================================================================== Function Sekretaris -->
@@ -97,7 +97,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_sekretaris()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/sekretaris.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 	function update_profil_sekretaris()
@@ -121,7 +121,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_sekretaris($where,$data,'ukm_sekretaris');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 // ==================================================================================================== Function Bendahara1 -->
@@ -129,7 +129,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_bendahara1()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/bendahara1.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 	function update_profil_bendahara1()
@@ -153,7 +153,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_bendahara1($where,$data,'ukm_bendahara1');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 // ==================================================================================================== Function Bendahara2 -->
@@ -161,7 +161,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_bendahara2()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/bendahara2.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 	function update_profil_bendahara2()
@@ -185,7 +185,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_bendahara2($where,$data,'ukm_bendahara2');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 // ==================================================================================================== Function Humas -->
@@ -193,7 +193,7 @@ class Admin_struktur_page extends CI_Controller{
 	public function update_humas()
 	{
 		move_uploaded_file($_FILES['foto']['tmp_name'], './assets/foto/humas.jpg');
-		redirect( base_url().'admin_struktur');
+		redirect( base_url().'admin_struktur_page');
 	}
 
 	function update_profil_humas()
@@ -217,7 +217,7 @@ class Admin_struktur_page extends CI_Controller{
 	);
 
 	$this->m_struktur->update_humas($where,$data,'ukm_humas');
-	redirect('admin_struktur');
+	redirect('admin_struktur_page');
 	}
 
 }

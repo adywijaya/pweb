@@ -15,7 +15,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
 
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_ketua" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_ketua" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -28,7 +28,7 @@
 <!-- Profil Ketua ====================================================================================================== -->
 
                         <?php foreach($ukm_ketua as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_ketua'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_ketua'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
@@ -82,7 +82,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                     
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_wakil" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_wakil" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -95,7 +95,7 @@
 <!-- Profil Wakil ====================================================================================================== -->
 
                         <?php foreach($ukm_wakil as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_wakil'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_wakil'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
@@ -149,7 +149,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                     
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_sekretaris" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_sekretaris" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -162,7 +162,7 @@
 <!-- Profil Sekretaris ==================================================================================================== -->
                          
                         <?php foreach($ukm_sekretaris as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_sekretaris'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_sekretaris'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
@@ -218,7 +218,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                     
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_bendahara1" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_bendahara1" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -231,7 +231,7 @@
 <!-- Profil Bendahara1 ==================================================================================================== -->
                          
                         <?php foreach($ukm_bendahara1 as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_bendahara1'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_bendahara1'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
@@ -284,7 +284,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                     
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_bendahara2" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_bendahara2" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -297,7 +297,7 @@
 <!-- Profil Bendahara2 ==================================================================================================== -->
                          
                         <?php foreach($ukm_bendahara2 as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_bendahara2'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_bendahara2'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
@@ -350,7 +350,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                     
-                        <form role="form" action="<?= base_url()?>admin_struktur/update_humas" method="post" enctype="multipart/form-data">
+                        <form role="form" action="<?= base_url()?>admin_struktur_page/update_humas" method="post" enctype="multipart/form-data">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
                                 <input type="file" class="form-control" placeholder="Load Foto" name="foto">
@@ -363,7 +363,7 @@
 <!-- Profil Humas ==================================================================================================== -->
                          
                         <?php foreach($ukm_humas as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur/update_profil_humas'; ?>" method="post">
+                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_humas'; ?>" method="post">
 
                         <div class="col-md-12 col-md-push-0">
                             <div class="bs-example">
