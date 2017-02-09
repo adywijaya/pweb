@@ -8,7 +8,7 @@ class Admin extends CI_Controller {
 		$this->load->model('m_login');
 	}
 
-	public function index()
+	function flogin()
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/polos_nav.php');

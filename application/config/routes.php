@@ -10,7 +10,8 @@ $route['saran'] = 'saran';
 $route['pendaftaran'] = 'pendaftaran';
 
 /*Admin*/
-$route['admin'] = 'admin';
+$route['admin'] = 'admin/flogin';
+
 
 $route['admin_home'] = 'admin_home';
 $route['admin_kegiatan'] = 'admin_kegiatan';
