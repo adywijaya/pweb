@@ -31,13 +31,12 @@
                                 <td><?php echo $u->email ?></td>
                                 <td><?php echo $u->saran ?></td>
                                 <td>
-                                                  <?php echo anchor('admin_saran/hapus/'.$u->id,'Hapus'); ?>
+                                                  <?php echo anchor('admin_saran_page/hapus/'.$u->id,'Hapus'); ?>
                                 </td>
                             </tr>
                             <?php } ?>
                         </tbody>
                     </table>
-    
             </div>
         </div>
     </section>
