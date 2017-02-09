@@ -5,16 +5,12 @@ class Admin_anggota extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('m_anggota');
-        $this->load->helper('url');
-
-        if($this->session->userdata('status') != "login")
-        {
-			redirect(base_url().'admin/login');
-		}		
+        $this->load->helper('url');	
 	}
 
 	public function index()
 	{
+		if(!isset($_SESSION['login'])) redirect(base_url().'admin/login');
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
 		$data['users'] = $this->m_anggota->tampil_data()->result();

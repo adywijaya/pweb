@@ -10,8 +10,9 @@ $route['saran'] = 'saran';
 $route['pendaftaran'] = 'pendaftaran';
 
 /*Admin*/
-$route['admin/login'] = 'admin/flogin';
+$route['admin/login'] = 'admin';
 $route['admin/dologin'] = 'admin/aksi_login';
+$route['admin/logout'] = 'admin/logout';
 
 
 
@@ -20,7 +21,6 @@ $route['admin_kegiatan'] = 'admin_kegiatan';
 $route['admin_struktur'] = 'admin_struktur';
 $route['admin_saran'] = 'admin_saran';
 $route['admin_anggota'] = 'admin_anggota';
-$route['updatepoint/(:any)'] = 'admin_anggota/updatepoint/$1';
 
 //*Register*//
 $route['register'] = 'signup/signuppage';

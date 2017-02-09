@@ -6,18 +6,12 @@ class Admin_home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('m_data');
         $this->load->helper('url');
-
-        if($this->session->userdata('status') != "login")
-        {
-			redirect(base_url().'admin/login');
-		}	
-
         	
 	}
 
 	public function index()
 	{
-
+		if(!isset($_SESSION['login'])) redirect(base_url().'admin/login');
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
 		$data['kas'] = $this->m_data->tampil_info()->result();
