@@ -1,6 +1,6 @@
     <footer>
         <hr>
-        <a href="<?= base_url()?>admin/form">admin</a>
+        <a href="<?= base_url()?>admin">admin</a>
     </footer>
     
  <!-- jQuery -->
