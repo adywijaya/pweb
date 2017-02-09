@@ -5,8 +5,7 @@ class Admin_home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('m_data');
-        $this->load->helper('url');
-        	
+        $this->load->helper('url'); 	
 	}
 
 	public function index()

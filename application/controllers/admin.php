@@ -1,11 +1,13 @@
 <?php 
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
 
-	public function __construct()
+	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('m_login');
+		$this->load->helper('url'); 
 	}
 
 	public function index()
@@ -29,7 +31,7 @@ class Admin extends CI_Controller {
 	}
 
 /*==========================================================================Logout admin*/
-	public function logout()
+	function logout()
 	{
 		$this->session->sess_destroy();
 		redirect(base_url().'home');

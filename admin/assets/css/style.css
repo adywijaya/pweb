@@ -1,0 +1,19 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.fontaw {
+     font-size: 90px;
+}
+
+.font1 {
+     font-size: 18px;
+}
+
+a {
+  color: #0099ff;
+}
