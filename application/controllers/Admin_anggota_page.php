@@ -22,11 +22,11 @@ class Admin_anggota_page extends CI_Controller {
 	{
 		$where = array('id' => $id);
 		$this->m_anggota->hapus_data($where,'users');
-		redirect('admin_anggota');
+		redirect('admin_anggota_page');
 	}
 
 	public function updatepoint($nim){
 		$this->m_anggota->updatepoint($nim, $this->input->post('point'));
-		redirect('admin_anggota');
+		redirect('admin_anggota_page');
 	}
 }

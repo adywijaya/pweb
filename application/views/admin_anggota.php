@@ -31,7 +31,7 @@
                         </thead>
                         <tbody>
                             <?php $no = 1; foreach($users as $u){ ?>
-                            <form action="updatepoint/<?php echo $u->nim ?>" method="post">
+                            <form action="updatepoint_page/<?php echo $u->nim ?>" method="post">
                                 <tr>
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $u->nim ?></td>

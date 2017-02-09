@@ -22,7 +22,7 @@ $route['admin_struktur_page'] = 'admin_struktur_page';
 $route['admin_saran_page'] = 'admin_saran_page';
 $route['admin_anggota_page'] = 'admin_anggota_page';
 
-$route['updatepoint/(:any)'] = 'admin_anggota/updatepoint/$1';
+$route['updatepoint_page/(:any)'] = 'admin_anggota_page/updatepoint/$1';
 
 //*Register*//
 $route['register'] = 'signup/signuppage';
