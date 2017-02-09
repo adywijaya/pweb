@@ -68,7 +68,7 @@
         <br><br>
 	</center>
 	<?php foreach($planning as $u){ ?>
-	<form action="<?php echo base_url(). 'crud_home/update'; ?>" method="post">
+	<form action="<?php echo base_url(). 'crud_home_page/update'; ?>" method="post">
 		<div class="col-md-6 col-md-push-4">
             <div class="bs-example">
             <fieldset>
