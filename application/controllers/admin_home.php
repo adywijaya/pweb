@@ -7,14 +7,13 @@ class Admin_home extends CI_Controller {
 		$this->load->model('m_data');
         $this->load->helper('url');
 
-        if($this->session->userdata('status') != "login")
-        {
-			redirect("/admin");
-		}	
+        	
 	}
 
 	public function index()
 	{
+		if( !isset( $_SESSION['username'] ) ) redirect('admin/login');
+
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
 		$data['kas'] = $this->m_data->tampil_info()->result();

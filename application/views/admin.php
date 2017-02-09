@@ -70,7 +70,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-        <form action=" <?php echo base_url('admin/aksi_login'); ?>" method="post">
+        <form action=" <?php echo base_url()?>admin/dologin" method="post">
           <h2 class="text-center"><i class="fa fa-user" aria-hidden="true"></i> Login Admin
           <hr class="hr">
           </h2>
@@ -136,3 +136,4 @@
 </body>
 
 </html>
+

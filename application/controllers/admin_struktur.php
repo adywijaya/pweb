@@ -8,14 +8,12 @@ class Admin_struktur extends CI_Controller{
 		$this->load->model('m_struktur');
         $this->load->helper('url');
 
-        if($this->session->userdata('status') != "login")
-        {
-			redirect("admin");
-		}	
 	}
 
 	function index()
 	{
+		if( !isset( $_SESSION['username'] ) ) redirect('admin/login');
+		
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
 		$data['ukm_ketua'] = $this->m_struktur->tampil_ketua()->result();
