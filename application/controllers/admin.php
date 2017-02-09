@@ -8,12 +8,9 @@ class Admin extends CI_Controller {
 		$this->load->model('m_login');
 	}
 
-	public function index()
+	function flogin()
 	{
-		$this->load->view('templates/header.php');
-		$this->load->view('templates/polos_nav.php');
 		$this->load->view('admin');
-		$this->load->view('templates/login_footer.php');
 	}
 
 /*==========================================================================Login KHUSUS admin*/
