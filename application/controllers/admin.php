@@ -16,7 +16,7 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/login_footer.php');
 	}
 
-/*==========================================================================Login admin*/
+/*==========================================================================Login KHUSUS admin*/
 	function aksi_login()
 	{
 		$username = $this->input->post('username');
