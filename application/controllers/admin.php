@@ -35,14 +35,14 @@ class Admin extends CI_Controller {
 				);
 
 			$this->session->set_userdata($data_session);
-			redirect("admin_home");
+			redirect(base_url()."admin_home");
 
 
 		}
 		else
 		{
 			$_SESSION['notif'] = 1;
-			redirect('admin');
+			redirect(base_url().'admin');
 		}
 	}
 
@@ -50,6 +50,6 @@ class Admin extends CI_Controller {
 	public function logout()
 	{
 		$this->session->sess_destroy();
-		redirect('home');
+		redirect(base_url().'home');
 	}
 }
