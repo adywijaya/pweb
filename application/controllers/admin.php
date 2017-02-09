@@ -12,7 +12,7 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/polos_nav.php');
-		$this->load->view('loginadmin');
+		$this->load->view('admin');
 		$this->load->view('templates/login_footer.php');
 	}
 
