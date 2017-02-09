@@ -9,8 +9,8 @@ class Admin_anggota extends CI_Controller {
 
         if($this->session->userdata('status') != "login")
         {
-			redirect("admin");
-		}	
+			redirect(base_url().'admin/login');
+		}		
 	}
 
 	public function index()

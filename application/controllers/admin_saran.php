@@ -7,14 +7,15 @@ class Admin_saran extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('m_saran');
 		$this->load->helper('url');
-
-
+		
+		if($this->session->userdata('status') != "login")
+        {
+			redirect(base_url().'admin/login');
+		}	
 	}
 
 	public function index()
-	{
-		if( !isset( $_SESSION['username'] ) ) redirect('admin/login');
-		
+	{	
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
 		$data['saran'] = $this->m_saran->tampil_data()->result();

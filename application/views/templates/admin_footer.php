@@ -1,6 +1,6 @@
     <footer>
         <hr>
-        <a href="admin">Logout</a>
+        <a href="<?= base_url("admin/login")?>">Logout</a>
     </footer> 
     <br>
 

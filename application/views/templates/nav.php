@@ -15,25 +15,25 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="home">Home</a>
+                        <a href="<?= base_url()?>home">Home</a>
                     </li>
                     <li>
-                        <a href="kegiatan">Kegiatan</a>
+                        <a href="<?= base_url()?>kegiatan">Kegiatan</a>
                     </li>
                     <li>
-                        <a href="struktur">Struktur</a>
+                        <a href="<?= base_url()?>struktur">Struktur</a>
                     </li>
                     <li>
-                        <a href="visi">Visi & Misi</a>
+                        <a href="<?= base_url()?>visi">Visi & Misi</a>
                     </li>
                     <li>
-                        <a href="tentang">Tentang Kampus</a>
+                        <a href="<?= base_url()?>tentang">Tentang Kampus</a>
                     </li>
                     <li>
-                        <a href="saran">Kritik & Saran</a>
+                        <a href="<?= base_url()?>saran">Kritik & Saran</a>
                     </li> 
                      <li>
-                         <a href="register">Pendaftaran</a>
+                         <a href="<?= base_url()?>register">Pendaftaran</a>
                      </li>
                      <li>
                          <a href="<?= base_url()?>reward">Anggota</a>

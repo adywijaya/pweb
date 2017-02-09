@@ -7,12 +7,16 @@ class Admin_home extends CI_Controller {
 		$this->load->model('m_data');
         $this->load->helper('url');
 
+        if($this->session->userdata('status') != "login")
+        {
+			redirect(base_url().'admin/login');
+		}	
+
         	
 	}
 
 	public function index()
 	{
-		if( !isset( $_SESSION['username'] ) ) redirect('admin/login');
 
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');

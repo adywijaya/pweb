@@ -14,6 +14,7 @@ $route['admin/login'] = 'admin/flogin';
 $route['admin/dologin'] = 'admin/aksi_login';
 
 
+
 $route['admin_home'] = 'admin_home';
 $route['admin_kegiatan'] = 'admin_kegiatan';
 $route['admin_struktur'] = 'admin_struktur';
