@@ -8,7 +8,7 @@ class Admin extends CI_Controller {
 		$this->load->model('m_login');
 	}
 
-	function flogin()
+	public function index()
 	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/polos_nav.php');
@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 		else
 		{
 			$_SESSION['notif'] = 1;
-			redirect(base_url().'admin');
+			redirect(base_url().'admin/login');
 		}
 	}
 
