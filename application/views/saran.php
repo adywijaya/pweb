@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <label for="textArea" class="col-lg-2 control-label">Kritik dan Saran</label>
                             <div class="col-lg-10">
-                                <textarea class="form-control" type="text" name="saran" rows="3" id="textArea" placeholder="Masukkan Kritik & saranmu"></textarea>
+                                <textarea required="required" class="form-control" type="text" name="saran" rows="3" id="textArea" placeholder="Masukkan Kritik & saranmu"></textarea>
                             </div>
                         </div>
 
