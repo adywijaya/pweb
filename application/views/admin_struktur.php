@@ -275,7 +275,8 @@
                             </fieldset>
                             </div>
                         </div>
-                        <?php } ?> 
+                        <?php } ?>
+                        </form> 
                     </div>
                 </div>
 
@@ -342,6 +343,7 @@
                             </div>
                         </div>
                         <?php } ?>
+                        </form>
                     </div>
                 </div>
 
@@ -408,6 +410,7 @@
                             </div>
                         </div>
                         <?php } ?>
+                        </form>
                     </div>
                 </div>
             </div>
