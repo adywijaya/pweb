@@ -1,5 +1,4 @@
-    <!-- Pendaftaran Section -->
-<section id="services">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -130,9 +129,7 @@
                 </div>
         </div>
 
-
-
     <script type="text/javascript">
       document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
     </script>
-</section>
+
