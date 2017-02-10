@@ -42,7 +42,8 @@
 <!-- Tampil Saran ==================================================================================================== -->
                     <br><br><br>
                     <h2 class="section-heading"></h2>
-                    <table class="table table-striped table-striped text-justify">
+                    <div class="table-responsive">
+                    <table class="table table-striped table-striped text-justify table-hover">
                         <thead>
                             <tr>
                                 <th>No</th>
@@ -62,7 +63,7 @@
                             <?php } ?>
                         </tbody>
                     </table>
-    
+                    </div>
             </div>
         </div>
     </section>
