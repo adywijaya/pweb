@@ -76,14 +76,14 @@
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                        <input type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+                        <input required="required" type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Acara</label>
                     <div class="col-lg-5">
-                        <input type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
+                        <input required="required" type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
                     </div>
                 </div><br><br>
 

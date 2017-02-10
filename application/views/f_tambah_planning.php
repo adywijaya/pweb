@@ -74,14 +74,14 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
-                        <input type="text" name="tanggal" class="form-control" placeholder="Tanggal">
+                        <input required="required" type="text" name="tanggal" class="form-control" placeholder="Tanggal">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Acara</label>
                     <div class="col-lg-5">
-                        <input type="text" name="acara" class="form-control" placeholder="Acara">
+                        <input required="required" type="text" name="acara" class="form-control" placeholder="Acara">
                     </div>
                 </div><br><br>
 

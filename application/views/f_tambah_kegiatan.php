@@ -73,28 +73,28 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
-                        <input type="text" name="tanggal" class="form-control" placeholder="Tanggal">
+                        <input required="required" type="text" name="tanggal" class="form-control" placeholder="Tanggal">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Jam</label>
                     <div class="col-lg-5">
-                        <input type="text" name="jam" class="form-control" placeholder="Jam">
+                        <input required="required" type="text" name="jam" class="form-control" placeholder="Jam">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tempat</label>
                     <div class="col-lg-5">
-                        <input type="text" name="tempat" class="form-control" placeholder="Tempat">
+                        <input required="required" type="text" name="tempat" class="form-control" placeholder="Tempat">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Acara</label>
                     <div class="col-lg-5">
-                        <input type="text" name="acara" class="form-control" placeholder="Acara">
+                        <input required="required" type="text" name="acara" class="form-control" placeholder="Acara">
                     </div>
                 </div><br><br>
 

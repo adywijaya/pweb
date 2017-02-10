@@ -75,28 +75,28 @@
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                        <input type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+                        <input required="required" type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Jam</label>
                     <div class="col-lg-5">
-                        <input type="text" name="jam" class="form-control" value="<?php echo $u->jam ?>">
+                        <input required="required" type="text" name="jam" class="form-control" value="<?php echo $u->jam ?>">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tempat</label>
                     <div class="col-lg-5">
-                        <input type="text" name="tempat" class="form-control" value="<?php echo $u->tempat ?>">
+                        <input required="required" type="text" name="tempat" class="form-control" value="<?php echo $u->tempat ?>">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Acara</label>
                     <div class="col-lg-5">
-                        <input type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
+                        <input required="required" type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
                     </div>
                 </div><br><br>
 
