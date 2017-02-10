@@ -9,7 +9,6 @@ class Signup extends CI_Controller {
 	        $this->load->view('templates/header.php');
   			$this->load->view('templates/nav.php');
 			$this->load->model('user_model');
-			$this->load->view('templates/footer.php');
 	    }
 
 

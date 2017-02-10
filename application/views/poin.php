@@ -1,7 +1,7 @@
 <section id="services">
 <div class="container">
   <div class="col-md-10 col-md-push-1">
-    <center><h1>Informasi Anggota</h1><center>
+    <center><h2 class="section-heading">Informasi Anggota</h2><center>
     <br><br>
     <div class="table-responsive">
     <table class="table table-striped table-hover">
