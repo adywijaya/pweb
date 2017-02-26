@@ -27,53 +27,6 @@
 
 <!-- Profil Ketua ====================================================================================================== -->
 
-                        <?php foreach($ukm_ketua as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_ketua'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form>
                     </div>
                 </div>
 
@@ -94,53 +47,6 @@
 
 <!-- Profil Wakil ====================================================================================================== -->
 
-                        <?php foreach($ukm_wakil as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_wakil'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form> 
                     </div>
                 </div>
                 
@@ -161,55 +67,49 @@
 
 <!-- Profil Sekretaris ==================================================================================================== -->
                          
-                        <?php foreach($ukm_sekretaris as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_sekretaris'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form>
                     </div>
                 </div>
+
+                <?php 
+    foreach ($this->m_struktur->getorganisasi() as $pengurus) {
+
+    
+ ?>
+ <form action="<?php echo base_url(). 'admin_struktur_page/updateorg' ?>" method="post" enctype='multipart/from-data'>
+                <div class="col-sm-4" >
+                    <div class="team-member">
+                   
+                        <input type="hidden" name="id" value="<?= $pengurus['id'] ?>">
+                    
+                        <p>
+                        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" id="nama" required="required" 
+                        value="<?= $pengurus['nama']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='jabatan' placeholder="Jabatan" type="text" id="jabatan" required="required"
+                        value="<?= $pengurus['jabatan']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='jurusan' placeholder="Jurusan" type="text" id="link" 
+                        value="<?= $pengurus['jurusan']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='angkatan' placeholder="Angkatan" type="text" id="link" 
+                        value="<?= $pengurus['angkatan']?>">
+                        </p>
+                        
+                        <br>    
+                        <button type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
+                                
+                    </div>
+                </div>
+</form>
+<?php
+    }
+?>
 
             <div class="row">
 
@@ -230,53 +130,7 @@
                          
 <!-- Profil Bendahara1 ==================================================================================================== -->
                          
-                        <?php foreach($ukm_bendahara1 as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_bendahara1'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form> 
+                        
                     </div>
                 </div>
 
@@ -297,53 +151,7 @@
                          
 <!-- Profil Bendahara2 ==================================================================================================== -->
                          
-                        <?php foreach($ukm_bendahara2 as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_bendahara2'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form>
+                        
                     </div>
                 </div>
 
@@ -364,55 +172,51 @@
                          
 <!-- Profil Humas ==================================================================================================== -->
                          
-                        <?php foreach($ukm_humas as $u){ ?>
-                        <form action="<?php echo base_url(). 'admin_struktur_page/update_profil_humas'; ?>" method="post">
-
-                        <div class="col-md-12 col-md-push-0">
-                            <div class="bs-example">
-                            <fieldset>
-                                <br>
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Nama</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="nama" class="form-control" value="<?php echo $u->nama ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jabatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jabatan" class="form-control" value="<?php echo $u->jabatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Jurusan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="jurusan" class="form-control" value="<?php echo $u->jurusan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="form-group">
-                                <label class="col-lg-2 control-label">Angkatan</label><br>
-                                    <div class="col-lg-12">
-                                        <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                                        <input type="text" name="angkatan" class="form-control" value="<?php echo $u->angkatan ?>">
-                                    </div>
-                                </div><br><br>
-
-                                <div class="col-lg-3 col-lg-offset-4">
-                                    <button type="submit" class="btn btn-primary" value="Simpan">Ubah</button>
-                                </div><br><br><br>
-                            </fieldset>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        </form>
+                        
+                        
                     </div>
                 </div>
+
+                                <?php 
+    foreach ($this->m_struktur->getorganisasi2() as $pengurus) {
+
+    
+ ?>
+ <form action="<?php echo base_url(). 'admin_struktur_page/updateorg2' ?>" method="post" enctype='multipart/from-data'>
+                <div class="col-sm-4" >
+                    <div class="team-member">
+                   
+                        <input type="hidden" name="id" value="<?= $pengurus['id'] ?>">
+                    
+                        <p>
+                        <input class="form-control" name='nama' placeholder="Nama Lengkap" type="text" id="nama" required="required" 
+                        value="<?= $pengurus['nama']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='jabatan' placeholder="Jabatan" type="text" id="jabatan" required="required"
+                        value="<?= $pengurus['jabatan']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='jurusan' placeholder="Jurusan" type="text" id="link" 
+                        value="<?= $pengurus['jurusan']?>">
+                        </p>
+
+                        <p>
+                        <input class="form-control" name='angkatan' placeholder="Angkatan" type="text" id="link" 
+                        value="<?= $pengurus['angkatan']?>">
+                        </p>
+                        
+                        <br>    
+                        <button type="submit" class="btn btn-primary" value="Simpan">Simpan</button>
+                                
+                    </div>
+                </div>
+</form>
+<?php
+    }
+?>
             </div>
         </div>
 

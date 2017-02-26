@@ -19,24 +19,6 @@ class Admin_saran_page extends CI_Controller {
 		$this->load->view('templates/admin_footer.php');
 	}
 
-	function tambah(){
-		$this->load->view('saran');
-	}
-
-	function tambah_aksi(){
-		$nama = $this->input->post('nama');
-		$email = $this->input->post('email');
-		$saran = $this->input->post('saran');
-
-
-		$data = array(
-			'nama' => $nama,
-			'email' => $email,
-			'saran' => $saran,
-			);
-		$this->m_saran->input_data($data,'saran');
-		redirect('saran');
-	}
 
 	function hapus($id)
 	{

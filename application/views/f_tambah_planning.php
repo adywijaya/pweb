@@ -74,7 +74,7 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="tanggal" class="form-control" placeholder="Tanggal">
+                        <input required="required" type="date" name="tanggal" class="form-control" placeholder="Tanggal">
                     </div>
                 </div><br><br>
 

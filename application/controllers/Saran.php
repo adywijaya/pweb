@@ -10,8 +10,7 @@ class Saran extends CI_Controller {
 
 	}
 
-	public function index()
-	{
+	public function index()	{
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/nav.php');
 		$data['saran'] = $this->m_saran->tampil_data()->result();
@@ -27,12 +26,14 @@ class Saran extends CI_Controller {
 		$nama = $this->input->post('nama');
 		$email = $this->input->post('email');
 		$saran = $this->input->post('saran');
+		$tanggal = date("d-m-y H:i:s");
 
 
 		$data = array(
 			'nama' => $nama,
 			'email' => $email,
 			'saran' => $saran,
+			'tanggal' => $tanggal,
 			);
 		$this->m_saran->input_data($data,'saran');
 		redirect('saran');

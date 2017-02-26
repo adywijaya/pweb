@@ -16,12 +16,8 @@ class Admin_struktur_page extends CI_Controller{
 		
 		$this->load->view('templates/header.php');
 		$this->load->view('templates/admin_nav.php');
-		$data['ukm_ketua'] = $this->m_struktur->tampil_ketua()->result();
-		$data['ukm_wakil'] = $this->m_struktur->tampil_wakil()->result();
-		$data['ukm_sekretaris'] = $this->m_struktur->tampil_sekretaris()->result();
-		$data['ukm_bendahara1'] = $this->m_struktur->tampil_bendahara1()->result();
-		$data['ukm_bendahara2'] = $this->m_struktur->tampil_bendahara2()->result();
-		$data['ukm_humas'] = $this->m_struktur->tampil_humas()->result();
+		$data['struktur'] = $this->m_struktur->tampil_s()->result();
+		$data['struktur2'] = $this->m_struktur->tampil_s2()->result();
 		$this->load->view('admin_struktur',$data);
 		$this->load->view('templates/admin_footer.php');
 	}
@@ -218,6 +214,52 @@ class Admin_struktur_page extends CI_Controller{
 
 	$this->m_struktur->update_humas($where,$data,'ukm_humas');
 	redirect('admin_struktur_page');
+	}
+
+	function updateorg(){
+		$id = $this->input->post('id');
+		$nama = $this->input->post('nama');
+		$jabatan = $this->input->post('jabatan');
+		$jurusan = $this->input->post('jurusan');
+		$angkatan = $this->input->post('angkatan');
+
+		$data = array(
+			'id' => $id,
+			'nama' => $nama,
+			'jabatan' => $jabatan,
+			'jurusan' => $jurusan,
+			'angkatan' => $angkatan,		
+		);
+
+		$where = array(
+			'id' => $id
+		);
+
+		$this->m_struktur->update_dataorg($where,$data,'struktur');
+		redirect('admin_struktur_page');
+	}
+
+		function updateorg2(){
+		$id = $this->input->post('id');
+		$nama = $this->input->post('nama');
+		$jabatan = $this->input->post('jabatan');
+		$jurusan = $this->input->post('jurusan');
+		$angkatan = $this->input->post('angkatan');
+
+		$data = array(
+			'id' => $id,
+			'nama' => $nama,
+			'jabatan' => $jabatan,
+			'jurusan' => $jurusan,
+			'angkatan' => $angkatan,		
+		);
+
+		$where = array(
+			'id' => $id
+		);
+
+		$this->m_struktur->update_dataorg($where,$data,'struktur2');
+		redirect('admin_struktur_page');
 	}
 
 }

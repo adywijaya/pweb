@@ -2,6 +2,7 @@
 
 class M_saran extends CI_Model{
 	function tampil_data(){
+		$this->db->order_by('tanggal DESC');
 		return $this->db->get('saran');
 	}
 
