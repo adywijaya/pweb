@@ -77,6 +77,7 @@
                     <div class="col-lg-5">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
                         <input required="required" type="date" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+<<<<<<< HEAD
                     </div>
                 </div><br><br>
 
@@ -89,6 +90,8 @@
                           <option>Rapat</option>
                           <option>Seminar</option>
                         </select>
+=======
+>>>>>>> origin/master
                     </div>
                 </div><br><br>
 

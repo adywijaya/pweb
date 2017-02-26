@@ -75,7 +75,11 @@
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
+<<<<<<< HEAD
                         <input required="required" type="date" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+=======
+                        <input required="required" type="date name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+>>>>>>> origin/master
                     </div>
                 </div><br><br>
 

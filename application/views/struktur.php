@@ -8,6 +8,7 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
+<<<<<<< HEAD
 
             <?php 
             foreach ($this->m_struktur->getorganisasi() as $struktur) {            
@@ -25,6 +26,43 @@
             <?php } ?> 
             </div>
         </div>      
+=======
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-responsive img-circle" src="assets/foto/ketua.jpg">
+                          
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-responsive img-circle" src="assets/foto/wakil.jpg">
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-responsive img-circle" src="assets/foto/sekretaris.jpg">
+
+                    </div>
+                </div>
+
+                 <?php 
+                foreach ($this->m_struktur->getorganisasi() as $struktur) {            
+                ?>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                            <h4><?= $struktur['nama'] ?></h4>
+                            <p class="text-muted"><?= $struktur['jabatan'] ?></p>
+                            <p class="text-muted"><?= $struktur['jurusan'] ?></p>
+                            <p class="text-muted"><?= $struktur['angkatan'] ?></p>
+                    </div>
+                </div>
+                <?php } ?> 
+
+
+            
+>>>>>>> origin/master
     </section>
 
 
