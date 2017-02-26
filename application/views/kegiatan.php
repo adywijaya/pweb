@@ -17,6 +17,7 @@
                                 <th>Tanggal</th>
                                 <th>Jam</th>
                                 <th>Tempat</th>
+                                <th>Jenis acara</th>
                                 <th>Acara</th>            
                             </tr>
                         </thead>
@@ -24,10 +25,11 @@
                             <?php $no = 1; foreach($kegiatan as $u){ ?>
                             <tr>
                                 <td><?php echo $no++ ?></td>
-                                <td><?php echo $u->tanggal ?></td>
-                                <td><?php echo $u->jam ?></td>
+                                <td><?php echo date("d M Y", strtotime( $u->tanggal ) ); // ?></td>
+                                <td><?php echo date("H:i a", strtotime( $u->jam ) ); // ?></td>
                                 <td><?php echo $u->tempat ?></td>
-                                <td><?php echo $u->acara ?></td>
+                                <td><?php echo $u->j_acara ?></td>
+                                <td><?php echo $u->n_acara ?></td>
                             </tr>
                             <?php } ?>  
                         </tbody>

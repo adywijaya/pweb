@@ -39,7 +39,7 @@
                         </fieldset>
                     </form>
 
-<!-- Tampil Saran ===================================================================================================== -->
+<!-- Tampil Saran ==================================================================================================== -->
                     <br><br><br>
                     <h2 class="section-heading"></h2>
                     <div class="table-responsive">
@@ -47,15 +47,17 @@
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>tanggal</th>             
                                 <th>Nama</th>
                                 <th>email</th>
-                                <th>Saran</th>             
+                                <th>Saran</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1; foreach($saran as $u){ ?>
                             <tr>
                                 <td><?php echo $no++ ?></td>
+                                <td><?php echo date("d F Y H:i:s", strtotime( $u->tanggal ) ); // ?></td>
                                 <td><?php echo $u->nama ?></td>
                                 <td><?php echo $u->email ?></td>
                                 <td><?php echo $u->saran ?></td>

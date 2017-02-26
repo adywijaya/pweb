@@ -73,14 +73,14 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="tanggal" class="form-control" placeholder="Tanggal">
+                        <input required="required" type="date" name="tanggal" class="form-control" placeholder="Tanggal">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Jam</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="jam" class="form-control" placeholder="Jam">
+                        <input required="required" type="time" name="jam" class="form-control" placeholder="Jam">
                     </div>
                 </div><br><br>
 
@@ -92,9 +92,21 @@
                 </div><br><br>
 
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">Acara</label>
+                    <label for="select" class="col-lg-2 control-label">Jenis Acara</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="acara" class="form-control" placeholder="Acara">
+                        <select class="form-control" id="select" name="j_acara">
+                          <option>Acara</option>
+                          <option>Latihan</option>
+                          <option>Rapat</option>
+                          <option>Seminar</option>
+                        </select>
+                    </div>
+                </div><br><br>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label">Nama Acara</label>
+                    <div class="col-lg-5">
+                        <input required="required" type="text" name="n_acara" class="form-control" placeholder="Acara">
                     </div>
                 </div><br><br>
 

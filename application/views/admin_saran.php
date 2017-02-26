@@ -11,32 +11,33 @@
             
 
 <!-- Tampil Saran ==================================================================================================== -->
-                    <br><br>
-                    <h2 class="section-heading"></h2>
-                    <table class="table table-striped table-striped text-justify">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>email</th>
-                                <th>Saran</th> 
-                                <th>Action</th>            
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php $no = 1; foreach($saran as $u){ ?>
-                            <tr>
-                                <td><?php echo $no++ ?></td>
-                                <td><?php echo $u->nama ?></td>
-                                <td><?php echo $u->email ?></td>
-                                <td><?php echo $u->saran ?></td>
-                                <td>
-                                                  <?php echo anchor('admin_saran_page/hapus/'.$u->id,'Hapus'); ?>
-                                </td>
-                            </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
+            <br><br>
+            <h2 class="section-heading"></h2>
+            <table class="table table-striped table-striped text-justify">
+                 <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>email</th>
+                        <th>Saran</th> 
+                        <th>Action</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $no = 1; foreach($saran as $u){ ?>
+                    <tr>
+                        <td><?php echo $no++ ?></td>
+                        <td><?php echo $u->nama ?></td>
+                        <td><?php echo $u->email ?></td>
+                        <td><?php echo $u->saran ?></td>
+                        <td>
+                                          <?php echo anchor('admin_saran_page/hapus/'.$u->id,'Hapus'); ?>
+                        </td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+            </div>
             </div>
         </div>
     </section>

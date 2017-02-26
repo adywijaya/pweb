@@ -20,13 +20,15 @@ class Crud_kegiatan_page extends CI_Controller {
 		$tanggal = $this->input->post('tanggal');
 		$jam = $this->input->post('jam');
 		$tempat = $this->input->post('tempat');
-		$acara = $this->input->post('acara');
+		$n_acara = $this->input->post('n_acara');
+		$j_acara = $this->input->post('j_acara');
 
 		$data = array(
 			'tanggal' => $tanggal,
 			'jam' => $jam,
 			'tempat' => $tempat,
-			'acara' => $acara,
+			'n_acara' => $n_acara,
+			'j_acara' => $j_acara,
 			);
 		$this->m_kegiatan->input_data($data,'kegiatan');
 		redirect('admin_kegiatan_page');
@@ -54,13 +56,15 @@ class Crud_kegiatan_page extends CI_Controller {
 		$tanggal2 = $this->input->post('tanggal');
 		$jam2 = $this->input->post('jam');
 		$tempat2 = $this->input->post('tempat');
-		$acara2 = $this->input->post('acara');
+		$j_acara2 = $this->input->post('j_acara');
+		$acara2 = $this->input->post('n_acara');
 
 		$data = array(
 			'tanggal' => $tanggal2,
 			'jam' => $jam2,
 			'tempat' => $tempat2,
-			'acara' => $acara2,
+			'j_acara' => $j_acara2,
+			'n_acara' => $acara2,
 		);
 
 		$where = array(
@@ -69,5 +73,10 @@ class Crud_kegiatan_page extends CI_Controller {
 
 		$this->m_kegiatan->update_data($where,$data,'kegiatan');
 		redirect('admin_kegiatan_page');
+	}
+
+	function absen()
+	{
+		redirect('admin_absen_page');
 	}
 }

@@ -8,102 +8,23 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-            <div class="row">
+
+            <?php 
+            foreach ($this->m_struktur->getorganisasi() as $struktur) {            
+            ?>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/ketua.jpg">
-                        
-                        <?php foreach($ukm_ketua as $u){ ?>
-                        <h4><?php echo $u->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $u->jabatan ?></p>
-                        <p class="text-muted"><?php echo $u->jurusan ?></p>
-                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
-                        <?php } ?>
-                        
-                        
+                        <img class="img-responsive img-circle" src="<?= $struktur['scr'] ?>">
+                        <br>
+                        <h5><?= $struktur['nama'] ?></h5>
+                        <p class="text-muted">Jabatan : <?= $struktur['jabatan'] ?></p>
+                        <p class="text-muted">Jurusan : <?= $struktur['jurusan'] ?></p>
+                        <p class="text-muted">Angkatan : <?= $struktur['angkatan'] ?></p>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/wakil.jpg">
-                        
-                        <?php foreach($ukm_wakil as $u){ ?>
-                        <h4><?php echo $u->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $u->jabatan ?></p>
-                        <p class="text-muted"><?php echo $u->jurusan ?></p>
-                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
-                        <?php } ?>
-                        
-
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/sekretaris.jpg">
-
-                        <?php foreach($ukm_sekretaris as $u){ ?>
-                        <h4><?php echo $u->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $u->jabatan ?></p>
-                        <p class="text-muted"><?php echo $u->jurusan ?></p>
-                        <p class="text-muted"><?php echo $u->angkatan ?></p>                        
-                        <?php } ?>
-
-
-                    </div>
-                </div>
+            <?php } ?> 
             </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/bendahara1.jpg">
-                         
-                         <?php foreach($ukm_bendahara1 as $w){ ?>
-                        <h4><?php echo $w->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $w->jabatan ?></p>
-                        <p class="text-muted"><?php echo $w->jurusan ?></p>
-                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
-                        <?php } ?> 
-
-
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/bendahara2.jpg">
-                         
-                         <?php foreach($ukm_bendahara2 as $w){ ?>
-                        <h4><?php echo $w->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $w->jabatan ?></p>
-                        <p class="text-muted"><?php echo $w->jurusan ?></p>
-                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
-                        <?php } ?>
-
-
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="img-responsive img-circle" src="assets/foto/humas.jpg">
-                         
-                         <?php foreach($ukm_humas as $w){ ?>
-                        <h4><?php echo $w->nama ?></h4>
-                        <p class="text-muted"></p>
-                        <p class="text-muted"><?php echo $w->jabatan ?></p>
-                        <p class="text-muted"><?php echo $w->jurusan ?></p>
-                        <p class="text-muted"><?php echo $w->angkatan ?></p>                        
-                        <?php } ?>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>      
     </section>
 
 

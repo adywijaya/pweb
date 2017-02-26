@@ -75,14 +75,14 @@
                     <label class="col-lg-2 control-label">Tanggal</label>
                     <div class="col-lg-5">
                         <input type="hidden" name="id" value="<?php echo $u->id ?>">
-                        <input required="required" type="text" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
+                        <input required="required" type="date" name="tanggal" class="form-control" value="<?php echo $u->tanggal ?>">
                     </div>
                 </div><br><br>
 
                 <div class="form-group">
                     <label class="col-lg-2 control-label">Jam</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="jam" class="form-control" value="<?php echo $u->jam ?>">
+                        <input required="required" type="time" name="jam" class="form-control" value="<?php echo $u->jam ?>">
                     </div>
                 </div><br><br>
 
@@ -94,9 +94,21 @@
                 </div><br><br>
 
                 <div class="form-group">
+                    <label for="select" class="col-lg-2 control-label">Jenis Acara</label>
+                    <div class="col-lg-5">
+                        <select class="form-control" id="select" name="j_acara">
+                          <option>Acara</option>
+                          <option>Latihan</option>
+                          <option>Rapat</option>
+                          <option>Seminar</option>
+                        </select>
+                    </div>
+                </div><br><br>
+
+                <div class="form-group">
                     <label class="col-lg-2 control-label">Acara</label>
                     <div class="col-lg-5">
-                        <input required="required" type="text" name="acara" class="form-control" value="<?php echo $u->acara ?>">
+                        <input required="required" type="text" name="n_acara" class="form-control" value="<?php echo $u->n_acara ?>">
                     </div>
                 </div><br><br>
 

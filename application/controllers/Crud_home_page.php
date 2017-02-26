@@ -20,10 +20,12 @@ class Crud_home_page extends CI_Controller {
 	function tambah_aksi()
 	{
 		$tanggal = $this->input->post('tanggal');
+		$j_acara = $this->input->post('j_acara');
 		$acara = $this->input->post('acara');
 
 		$data = array(
 			'tanggal' => $tanggal,
+			'j_acara' => $j_acara,
 			'acara' => $acara,
 			);
 		$this->m_data->input_data($data,'planning');
@@ -51,10 +53,12 @@ class Crud_home_page extends CI_Controller {
 	{
 	$id = $this->input->post('id');
 	$tanggal = $this->input->post('tanggal');
+	$j_acara = $this->input->post('j_acara');
 	$acara = $this->input->post('acara');
 
 	$data = array(
 		'tanggal' => $tanggal,
+		'j_acara' => $j_acara,
 		'acara' => $acara,
 	);
 

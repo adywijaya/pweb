@@ -51,13 +51,15 @@
                         <thead>
                             <tr>
                                 <th>Tanggal</th>
+                                <th>Jenis acara</th> 
                                 <th>Acara</th>              
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach($planning as $u){ ?>
                             <tr>
-                                <td><?php echo $u->tanggal ?></td>
+                                <td><?php echo date("d M Y", strtotime( $u->tanggal ) ); // ?></td>
+                                <td><?php echo $u->j_acara ?></td>
                                 <td><?php echo $u->acara ?></td>
                             </tr>
                             <?php } ?>
