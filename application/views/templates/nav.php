@@ -8,49 +8,36 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">UKM Bodhivijja</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Bodhivijja</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="home">Home</a>
+                        <a href="<?= base_url()?>home">Home</a>
                     </li>
                     <li>
-                        <a href="kegiatan">Kegiatan</a>
+                        <a href="<?= base_url()?>kegiatan">Kegiatan</a>
                     </li>
                     <li>
-                        <a href="struktur">Struktur</a>
+                        <a href="<?= base_url()?>struktur">Struktur</a>
                     </li>
                     <li>
-                        <a href="visi">Visi & Misi</a>
+                        <a href="<?= base_url()?>visi">Visi & Misi</a>
                     </li>
                     <li>
-                        <a href="tentang">Tentang Kampus</a>
+                        <a href="<?= base_url()?>tentang">Tentang Kampus</a>
                     </li>
-
-                    <?php
-                        if( isset( $_SESSION['id'] ) ) {
-                    ?>
-                            <li>
-                              <a href="<?= base_url()?>reward">Reward</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url()?>logout">Logout</a>
-                            </li>
-                    <?php
-                        } else {
-                     ?>
+                    <li>
+                        <a href="<?= base_url()?>saran">Kritik & Saran</a>
+                    </li> 
                      <li>
-                         <a href="register">Pendaftaran</a>
+                         <a href="<?= base_url()?>register">Pendaftaran</a>
                      </li>
                      <li>
-                         <a href="<?= base_url()?>login">login</a>
+                         <a href="<?= base_url()?>reward">Anggota</a>
                      </li>
-                    <?php
-                        }
-                    ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

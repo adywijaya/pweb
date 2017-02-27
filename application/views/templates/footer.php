@@ -1,4 +1,9 @@
- <!-- jQuery -->
+    <footer>
+        <hr>
+        <a href="<?= base_url()?>admin_login">admin</a>
+    </footer>
+
+    <!-- jQuery -->
     <script src="<?= base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -13,8 +18,6 @@
 
     <!-- Theme JavaScript -->
     <script src="<?= base_url() ?>assets/js/agency.min.js"></script>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
@@ -25,6 +28,8 @@
     <script src="<?= base_url() ?>assets/js/jquery.easing.min.js"></script>
     <script src="<?= base_url() ?>assets/js/scrolling-nav.js"></script>
     <script src="<?= base_url() ?>assets/js/ajax.js"></script>
+
+
 
 
 </body>

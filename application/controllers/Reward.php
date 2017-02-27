@@ -8,12 +8,13 @@ class Reward extends CI_Controller {
 		      $this->load->model('user_model');
     }
 
-    public function index(){
-      $this->data['reward'] = $this->user_model->get_poin();
+    public function index()
+    {
 
+      $data['users'] = $this->user_model->tampil_data()->result();
       $this->load->view('templates/header');
       $this->load->view('templates/nav');
-      $this->load->view('poin',  $this->data);
+      $this->load->view('poin', $data);
       $this->load->view('templates/footer');
     }
 

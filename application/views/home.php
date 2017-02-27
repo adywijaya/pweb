@@ -19,72 +19,68 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-bell fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Info Uang Kas</h4>
-                    <p class="text-muted">Nah guys ini kata yang agak sedikit horror untuk beberapa orang, disini karena kita akan aktif melakukan berbagai kegiatan. Dan tentu saja itu tidak menggunakan dana kecil, nah disinilah uang kas berfungsi sebagai tambahan dana dalam kegiatan kita. Sehingga kita tidak merasa terbebani dengan adanya biaya kegiatan. So guys kami tekan disni kami tidak mengambil keuntungan dari dana yang kalian berikan namun akan digunakan dalam berbagai kegiatan terutama dalam baksos. Biaya kas yang diberikan sebesar
-                    <b> Rp 25.000/bulan </b></p>
+                    <?php foreach($kas as $u){ ?>
+                    <p class="text-muted"><?php echo $u->kas ?></p>
+                    <?php } ?>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-3">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-user fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Dapatkan Point</h4>
-                    <p class="text-muted">Bagi seluruh anggota ukm bodhivijja akan mendapatkan point khusus bagi mahasiswa STIMIK KHARISMA MAKASSAR ketika mengikuti setiap kegiatan yang dilakukan ukm bodhivijja. Terutama saat mengikuti hari perayaan agama buddha seperti waisak,kathina,magha puja dan asadha. </p>
+                    <?php foreach($info as $u){ ?>
+                    <p class="text-muted"><?php echo $u->info ?></p>
+                    <?php } ?>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-3 row text-center">
                     <span class="fontaw fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fontaw fa fa-calendar fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Planning Kegiatan</h4>
-                    <table class="table table-bordered table-striped text-justify">
-
+                    <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>Tanggal</th>
-                                <th>Acara</th>
+                                <th>Acara</th>              
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach($planning as $u){ ?>
                             <tr>
-                                <td>5 November 2015</td>
-                                <td>Bodhivijja on Vacation</td>
+                                <td><?php echo $u->tanggal ?></td>
+                                <td><?php echo $u->acara ?></td>
                             </tr>
-                            <tr>
-                                <td>3 Desember 2015</td>
-                                <td>Hari Ibu (Kunjungan Panti Jompo)</td>
-                            </tr>
-                            <tr>
-                                <td>15 February 2016</td>
-                                <td>Magha Puja (Seminar)</td>
-                            </tr>
-                            <tr>
-                                <td>1 Mei 2016</td>
-                                <td>Waisak (Kunjungan Panti Asuhan)</td>
-                            </tr>
-                            <tr>
-                                <td>28 Juni 2016</td>
-                                <td>Asadha (Seminar Dhamma)</td>
-                            </tr>
-                            <tr>
-                                <td>15 Oktober 2016</td>
-                                <td>Kathina</td>
-                            </tr>
+                            <?php } ?>
+                            
                         </tbody>
+
                     </table>
+                </div>
+
+                <div class="col-md-3">
+                    <span class="fontaw fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-commenting-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Live Chat</h4>
+                    <script id="cid0020000145635959142" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 257px;height: 320px;">{"handle":"ukm-bodhivijja","arch":"js","styles":{"a":"e0e0e0","b":100,"c":"000000","d":"000000","k":"e0e0e0","l":"e0e0e0","m":"e0e0e0","p":"10","q":"e0e0e0","r":100,"fwtickm":1}}</script>
                 </div>
             </div>
         </div>
     </section>
 
+ 
 
-  <section id="services">
-        <div class="container">
-<script id="cid0020000144762715768" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 777px;height: 346px;">{"handle":"boddhivijja","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"surl":0,"cnrs":"0.35"}}</script>
-        </div>
-      </section>
+   
+
+   
